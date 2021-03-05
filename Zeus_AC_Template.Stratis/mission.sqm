@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1645.7603,88.124817,5608.6162};
-		dir[]={0.38718414,-0.91652417,-0.10048477};
-		up[]={0.88713092,0.3999854,-0.23023404};
-		aside[]={-0.25120711,-8.4401108e-007,-0.96794522};
+		pos[]={1652.7302,73.134193,5606.0386};
+		dir[]={0.38717952,-0.91651249,-0.10048349};
+		up[]={0.88712358,0.400006,-0.2302324};
+		aside[]={-0.25120488,0,-0.96793401};
 	};
 };
 binarizationWanted=0;
@@ -1883,15 +1883,15 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1678,6.3924227,5573};
-				angles[]={-0,3.1634092,0};
+				angles[]={0,3.1634092,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{[this] spawn { " \n " params[""_box""]; " \n " waitUntil{missionNameSpace getVariable [""initdone"", false]}; " \n " [_box,1] remoteExec [""AC_fnc_arsenalBox"",2]; " \n "}}";
-				name="arsenal";
+				init="call{if(isServer)then{[this] spawn {  " \n " params[""_box""];  " \n " waitUntil{missionNameSpace getVariable [""initdone"", false]};  " \n " [_box,1] remoteExec [""AC_fnc_arsenalBox"",2];  " \n "}}}";
+				name="arsenal1";
 			};
 			id=156;
 			type="B_supplyCrate_F";
@@ -2128,7 +2128,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1689.0863,7.4147005,5614.54};
-				angles[]={-0,0.27448794,0};
+				angles[]={0,0.27448794,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2162,16 +2162,16 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1681.2886,6.3924227,5584.7974};
-				angles[]={-0,3.1634092,0};
+				position[]={1681.2889,6.3924227,5584.7969};
+				angles[]={0,3.1634092,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{[this] spawn { " \n " params[""_box""]; " \n " waitUntil{missionNameSpace getVariable [""initdone"", false]}; " \n " [_box,3] remoteExec [""AC_fnc_arsenalBox"",2]; " \n "}}";
-				name="rearm";
+				init="call{if(isServer)then{[this] spawn {  " \n " params[""_box""];  " \n " waitUntil{missionNameSpace getVariable [""initdone"", false]};  " \n " [_box,1] remoteExec [""AC_fnc_arsenalBox"",2];  " \n "}}}";
+				name="rearm1";
 			};
 			id=172;
 			type="B_supplyCrate_F";

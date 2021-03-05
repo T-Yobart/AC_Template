@@ -23,8 +23,8 @@ briefing = 0;
 debriefing = 0;
 disableChannels[] = {{0,false,true},{1,false,true},{2,true,true},{3,false,true},{4,true,true},{5,true,true},{6,false,true}};
 joinUnassigned = 0;
-// Caboose, Apples, Yobart
-enableDebugConsole[] = {"76561198108857781", "76561198039816264", "76561198045282552"};
+// Caboose, Apples, Yobart, whitey
+enableDebugConsole[] = {"76561198108857781", "76561198039816264", "76561198045282552","76561198060486954"};
 enableTargetDebug = 1;
 corpseManagerMode = 3;
 wreckManagerMode = 3;
