@@ -16,10 +16,9 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1652.7302,73.134193,5606.0386};
-		dir[]={0.38717952,-0.91651249,-0.10048349};
-		up[]={0.88712358,0.400006,-0.2302324};
-		aside[]={-0.25120488,0,-0.96793401};
+		pos[]={1678.7032,30.5,5542.6699};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710671,0.70710683};
 	};
 };
 binarizationWanted=0;
@@ -2170,7 +2169,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{if(isServer)then{[this] spawn {  " \n " params[""_box""];  " \n " waitUntil{missionNameSpace getVariable [""initdone"", false]};  " \n " [_box,1] remoteExec [""AC_fnc_arsenalBox"",2];  " \n "}}}";
+				init="call{if(isServer)then{[this] spawn {  " \n " params[""_box""];  " \n " waitUntil{missionNameSpace getVariable [""initdone"", false]};  " \n " [_box,3] remoteExec [""AC_fnc_arsenalBox"",2];  " \n "}}}";
 				name="rearm1";
 			};
 			id=172;

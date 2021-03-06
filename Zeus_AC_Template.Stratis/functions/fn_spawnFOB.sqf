@@ -2,7 +2,7 @@
  * @file_name: fn_spawnFOB.sqf
  * @file_author: T. Yobart
  *
- * Adds an "FOB" behavior to a vehicle
+ * adds an "FOB" behavior to a vehicle
  * meaning it becomes a quasi respawn vehicles with added features
  *
  * Arguments:
@@ -18,8 +18,8 @@
  * [cursorObject,"oui"] remoteExec ["AC_fnc_spawnFOB",2];
  *
  *
- * Additionnal information:
- * If you want to forecfully "allow" a fob (here Charlie)
+ *
+ * 		If you want to forecfully "allow" a fob (here Charlie)
  * as a respawn (i.e.from the editor)
  *
  * Charlie setVariable ["fobPacked",false,true];
@@ -30,22 +30,21 @@
  *
  *
  *
- * Fob object placement
- * Spawning objects along the FOB setup is possible
+ * 		Spawning objects along the FOB setup is possible
  * be aware of the size of your vehicle as spawnObjects
  * will create object regardless of the vehicle size
  *
+ * ///////	fob object placement ///////
  * To add your own objects to the FOB spawn sequence
  * go to fn_spawnObjects add the following code block
  * replace the variables
- *
- * 	_x			//object you are going to spawn
- * 	_xPos		//pos of the object you want to spawn
- * 	_yPos		//position var from the object you will use to calculate _xpos
- * 	_yDir		//direction var from the object you will use to calculate _xpos
- * 	"x object classname"	//cfgVehicles classname of the object you want to spawn
- * 	_x object relative to y object
- *
+ * 		_x			//object you are going to spawn
+ * 		_xPos		//pos of the object you want to spawn
+ * 		_yPos		//position var from the object you will use to calculate _xpos
+ * 		_yDir		//direction var from the object you will use to calculate _xpos
+ * 		"x object classname"		//cfgVehicles classname of the object you want to spawn
+ *  
+ * _x object relative to y object
  * _xPos =_yPos getpos [4.5,_yDir];
  * _x = createVehicle ["x object classname",_xPos,[],0,""];
  * _x call fn_setSim;

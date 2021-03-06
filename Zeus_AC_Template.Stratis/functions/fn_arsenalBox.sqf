@@ -25,32 +25,35 @@
 //               SUB-FUNCTIONS                //
 ////////////////////////////////////////////////
 fn_initArsenal={
-    //getvars from initserver
-    _availableMisc=        missionNameSpace getVariable ["AC_arsenal_availableMisc",[]];
-    _availableMagazines=    missionNameSpace getVariable ["AC_arsenal_availableMagazines",[]];
-    _availableOptics=       missionNameSpace getVariable ["AC_arsenal_availableOptics",[]];
-    _availableWeapons=      missionNameSpace getVariable ["AC_arsenal_availableWeapons",[]];
-    _availableBackpacks=    missionNameSpace getVariable ["AC_arsenal_availableBackpacks",[]];
-    _availableVests=        missionNameSpace getVariable ["AC_arsenal_availableVests",[]];
-    _availableUniforms=     missionNameSpace getVariable ["AC_arsenal_availableUniforms",[]];
-    _availableGoggles=      missionNameSpace getVariable ["AC_arsenal_availableGoggles",[]];
-    _availableHeadgear=     missionNameSpace getVariable ["AC_arsenal_availableHeadgear",[]];
     //Init stuff
     params["_box"];
-    ["AmmoboxInit",[_box,false,{true}]] spawn BIS_fnc_arsenal;
-    //Populate with predefined items and whatever is already in the crate
-    [_box,((backpackCargo _box) + _availableBackpacks)] call BIS_fnc_addVirtualBackpackCargo;
-    [_box,((itemCargo _box) + _availableHeadgear + _availableGoggles + _availableUniforms + _availableVests + _availableMisc + _availableOptics)] call BIS_fnc_addVirtualItemCargo;
-    [_box,(magazineCargo _box) + _availableMagazines] call BIS_fnc_addVirtualMagazineCargo;
-    [_box,(weaponCargo _box) + _availableWeapons] call BIS_fnc_addVirtualWeaponCargo;
+    [_box,{
+        params["_box"];
+        //getvars from initserver
+        _availableMisc=         missionNameSpace getVariable ["AC_arsenal_availableMisc",[]];
+        _availableMagazines=    missionNameSpace getVariable ["AC_arsenal_availableMagazines",[]];
+        _availableOptics=       missionNameSpace getVariable ["AC_arsenal_availableOptics",[]];
+        _availableWeapons=      missionNameSpace getVariable ["AC_arsenal_availableWeapons",[]];
+        _availableBackpacks=    missionNameSpace getVariable ["AC_arsenal_availableBackpacks",[]];
+        _availableVests=        missionNameSpace getVariable ["AC_arsenal_availableVests",[]];
+        _availableUniforms=     missionNameSpace getVariable ["AC_arsenal_availableUniforms",[]];
+        _availableGoggles=      missionNameSpace getVariable ["AC_arsenal_availableGoggles",[]];
+        _availableHeadgear=     missionNameSpace getVariable ["AC_arsenal_availableHeadgear",[]];
+        ["AmmoboxInit",[_box,false,{true}]] spawn BIS_fnc_arsenal;
+        //Populate with predefined items and whatever is already in the crate
+        [_box,((backpackCargo _box) + _availableBackpacks)] call BIS_fnc_addVirtualBackpackCargo;
+        [_box,((itemCargo _box) + _availableHeadgear + _availableGoggles + _availableUniforms + _availableVests + _availableMisc + _availableOptics)] call BIS_fnc_addVirtualItemCargo;
+        [_box,(magazineCargo _box) + _availableMagazines] call BIS_fnc_addVirtualMagazineCargo;
+        [_box,(weaponCargo _box) + _availableWeapons] call BIS_fnc_addVirtualWeaponCargo;
+    }]remoteExec["bis_fnc_call", 0,true];
 };
 
-fn_setActions_loadout={
+fn_setActions_loadLoadout={
     params["_box"];
     //action to load saved loadout
     [
         _box,
-        "Load Saved Loadout",
+        "Load Loadout",
         "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_unloadDevice_ca.paa",
         "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_unloadDevice_ca.paa",
         "(_this distance _target < 3)",
@@ -59,6 +62,7 @@ fn_setActions_loadout={
         {},
         {
         [_caller, [_caller, "inventory_var"]] call BIS_fnc_loadInventory;
+        ["ace_medical_treatment_fullHealLocal", player, player] call CBA_fnc_targetEvent;
 
         },
         {},
@@ -68,13 +72,16 @@ fn_setActions_loadout={
         false,
         false
     ] remoteExec ["BIS_fnc_holdActionAdd",0,true];
+};
 
+fn_setActions_saveLoadout={
+    params["_box"];
     //action to save loadout
     [
         _box,
         "Save Loadout",
-        "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_unloadDevice_ca.paa",
-        "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_unloadDevice_ca.paa",
+        "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_loadDevice_ca.paa",
+        "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_loadDevice_ca.paa",
         "(_this distance _target < 3)",
         "(_caller distance _target < 3)",
         {},
@@ -196,24 +203,26 @@ if(isServer) then{
         case 0:
         { //spawn arsenal
             _object = _object call fn_createBox;
-            _object call fn_setActions_loadout;
+            _object call fn_setActions_saveLoadout;
+            _object call fn_setActions_loadLoadout;
             _object call fn_setActions_roles;
             _object call fn_initArsenal;
         };
         case 1:
         { //set box to an arsenal
-            _object call fn_setActions_loadout;
+            _object call fn_setActions_saveLoadout;
+            _object call fn_setActions_loadLoadout;
             _object call fn_setActions_roles;
             _object call fn_initArsenal;
         };
         case 2:
         { //spawn rearm
             _object = _object call fn_createBox;
-            _object call fn_setActions_loadout;
+            _object call fn_setActions_loadLoadout;
         };
         case 3:
         { //set rearm actions to a box
-            _object call fn_setActions_loadout;
+            _object call fn_setActions_loadLoadout;
         };
     };
 };
