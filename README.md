@@ -10,6 +10,7 @@ Mission file provides an example of the setup required by the features
 - Unit-Tracker
 - Arsenal/Rearm box
 - FOB teleport system
+- preset loadouts
 
 ## Customization
 Most of the variables you can change are available in the [init server file](Zeus_AC_Template.Stratis/InitServer.sqf) 
