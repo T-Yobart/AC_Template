@@ -38,6 +38,15 @@ class header {
 };
 
 class cfgFunctions {
+	class ZOPS
+    {
+        tag = "ZO";
+        class functions
+        {
+            file = "functions";
+            class spectator;
+        };
+    }
 	class athena
     {
         tag = "AC";
