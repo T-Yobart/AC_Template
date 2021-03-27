@@ -53,7 +53,7 @@ fn_setActions_loadLoadout={
     //action to load saved loadout
     [
         _box,
-        "Load Loadout",
+        "<t color='#0ff000'>Load Loadout</t>",
         "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_unloadDevice_ca.paa",
         "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_unloadDevice_ca.paa",
         "(_this distance _target < 3)",
@@ -79,7 +79,7 @@ fn_setActions_saveLoadout={
     //action to save loadout
     [
         _box,
-        "Save Loadout",
+        "<t color='#0ff000'>Save Loadout</t>",
         "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_loadDevice_ca.paa",
         "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_loadDevice_ca.paa",
         "(_this distance _target < 3)",
@@ -104,7 +104,7 @@ fn_setActions_roles={
     //action to set caller as medic
     [
         _box,
-        "Become a Medic",
+        "<t color='#ff9500'>Become a Medic</t>",
         "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_unloadDevice_ca.paa",
         "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_unloadDevice_ca.paa",
         "(_this distance _target < 3)",
@@ -127,7 +127,7 @@ fn_setActions_roles={
     //action to set caller as advanced engi
     [
         _box,
-        "Become an Engineer",
+        "<t color='#ff9500'>Become an Engineer</t>",
         "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_unloadDevice_ca.paa",
         "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_unloadDevice_ca.paa",
         "(_this distance _target < 3)",
@@ -150,7 +150,7 @@ fn_setActions_roles={
     //action to reset infantry roles
     [
         _box,
-        "Reset Medic/Engineer Role",
+        "<t color='#ff9500'>Reset Medic/Engineer Role</t>",
         "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_unloadDevice_ca.paa",
         "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_unloadDevice_ca.paa",
         "(_this distance _target < 3)",
@@ -169,6 +169,34 @@ fn_setActions_roles={
         false,
         false
     ] remoteExec ["BIS_fnc_holdActionAdd",0,true];
+};
+
+fn_setActions_Loadouts={
+    params["_box"];
+        //action to save loadout
+    {
+        _x params["_name","_loadout"];
+        [
+            _box,
+            format["<t color='#ff0000'>%1</t>",_name select [7]],
+            "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_loadDevice_ca.paa",
+            "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_loadDevice_ca.paa",
+            "(_this distance _target < 3)",
+            "(_caller distance _target < 3)",
+            {},
+            {},
+            {
+            _loadout=param[3]select 0;_loadout;
+            _caller setUnitLoadout _loadout;
+            },
+            {},
+            [_loadout],
+            1,
+            5,
+            false,
+            false
+        ] remoteExec ["BIS_fnc_holdActionAdd",0,true];
+    } forEach (missionNamespace getVariable ["loadouts",[]])
 };
 
 fn_createBox = {
@@ -205,6 +233,7 @@ if(isServer) then{
             _object = _object call fn_createBox;
             _object call fn_setActions_saveLoadout;
             _object call fn_setActions_loadLoadout;
+            _object call fn_setActions_Loadouts;
             _object call fn_setActions_roles;
             _object call fn_initArsenal;
         };
@@ -212,6 +241,7 @@ if(isServer) then{
         { //set box to an arsenal
             _object call fn_setActions_saveLoadout;
             _object call fn_setActions_loadLoadout;
+            _object call fn_setActions_Loadouts;
             _object call fn_setActions_roles;
             _object call fn_initArsenal;
         };

@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=175;
+		nextID=216;
 	};
 	class MarkerIDProvider
 	{
@@ -16,9 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1678.7032,30.5,5542.6699};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710671,0.70710683};
+		pos[]={1625.5726,19.843769,5550.8345};
+		dir[]={0.5417484,-0.6087988,0.57954532};
+		up[]={0.41573861,0.79332471,0.44474411};
+		aside[]={0.73052728,4.4703484e-008,-0.68288356};
 	};
 };
 binarizationWanted=0;
@@ -38,13 +39,31 @@ addons[]=
 	"A3_Supplies_F_Orange_Ammoboxes",
 	"A3_Soft_F_Gamma_Truck_01",
 	"A3_Soft_F_Exp_Truck_01",
-	"ace_realisticnames"
+	"ace_realisticnames",
+	"A3_Props_F_Enoch_Military_Camps",
+	"A3_Weapons_F_Rifles_MX",
+	"ace_optics",
+	"A3_Weapons_F_Acc",
+	"ace_laserpointer",
+	"A3_Weapons_F",
+	"ace_smallarms",
+	"ace_ballistics",
+	"A3_Weapons_F_Pistols_P07",
+	"ace_goggles",
+	"ace_nightvision",
+	"A3_Weapons_F_Items",
+	"ace_medical_engine",
+	"ace_medical_treatment",
+	"UK3CB_Factions_Equipment_Vests",
+	"ace_attach",
+	"ace_chemlights",
+	"ace_explosives"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=12;
+		items=25;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -127,6 +146,97 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item12
+		{
+			className="A3_Props_F_Enoch";
+			name="Arma 3 Contact Platform - Decorative and Mission Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item13
+		{
+			className="ace_optics";
+			name="ACE3 - Optics";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item14
+		{
+			className="ace_laserpointer";
+			name="ACE3 - Laser Pointer";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item15
+		{
+			className="ace_smallarms";
+			name="ACE3 - Small Arms";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item16
+		{
+			className="ace_ballistics";
+			name="ACE3 - Ballistics";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item17
+		{
+			className="ace_goggles";
+			name="ACE3 - Goggles";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item18
+		{
+			className="ace_nightvision";
+			name="ACE3 - Night Vision";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item19
+		{
+			className="ace_medical_engine";
+			name="ACE3 - Medical Engine";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item20
+		{
+			className="ace_medical_treatment";
+			name="ACE3 - Medical Treatment";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item21
+		{
+			className="UK3CB_Factions_Equipment";
+			name="3CB Factions - Equipment";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
+		};
+		class Item22
+		{
+			className="ace_attach";
+			name="ACE3 - Attach";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item23
+		{
+			className="ace_chemlights";
+			name="ace_chemlights";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item24
+		{
+			className="ace_explosives";
+			name="ACE3 - Explosives";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
 	};
 };
 randomSeed=13572791;
@@ -156,7 +266,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=24;
+		items=34;
 		class Item0
 		{
 			dataType="Logic";
@@ -260,7 +370,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1670.7015,5.5014391,5559.0571};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=7;
@@ -308,7 +418,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1671.6669,5.5014391,5558.7964};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -326,7 +436,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1672.6323,5.5014391,5558.5356};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -344,7 +454,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1673.5975,5.5014391,5558.2744};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -362,7 +472,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1674.563,5.5014391,5558.0137};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -380,7 +490,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1675.5283,5.5014391,5557.7524};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -398,7 +508,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1676.4937,5.5014391,5557.4912};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -416,7 +526,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1677.459,5.5014391,5557.231};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -434,7 +544,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1670.4406,5.5014391,5558.0923};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -452,7 +562,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1671.406,5.5014391,5557.8311};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -470,7 +580,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1672.3713,5.5014391,5557.5698};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -488,7 +598,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1673.3367,5.5014391,5557.3091};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -506,7 +616,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1674.302,5.5014391,5557.0483};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -524,7 +634,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1675.2673,5.5014391,5556.7871};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -542,7 +652,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1676.2327,5.5014391,5556.5264};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -560,7 +670,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1677.198,5.5014391,5556.2651};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -578,7 +688,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1670.1796,5.5014391,5557.1265};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -596,7 +706,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1671.145,5.5014391,5556.8652};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -614,7 +724,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1672.1102,5.5014391,5556.605};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -632,7 +742,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1673.0757,5.5014391,5556.3438};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -650,7 +760,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1674.041,5.5014391,5556.0825};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -668,7 +778,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1675.0063,5.5014391,5555.8218};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -686,7 +796,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1675.9717,5.5014391,5555.561};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -704,7 +814,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1676.9371,5.5014391,5555.2998};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -722,7 +832,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1669.9187,5.5014391,5556.1616};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -740,7 +850,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1670.884,5.5014391,5555.9004};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -758,7 +868,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1671.8494,5.5014391,5555.6392};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -776,7 +886,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1672.8147,5.5014391,5555.3784};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -794,7 +904,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1673.7802,5.5014391,5555.1177};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -812,7 +922,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1674.7454,5.5014391,5554.8564};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -830,7 +940,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1675.7107,5.5014391,5554.5952};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -848,7 +958,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1676.6761,5.5014391,5554.3345};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -866,7 +976,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1669.6577,5.5014391,5555.1958};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -884,7 +994,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1670.623,5.5014391,5554.9351};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -902,7 +1012,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1671.5884,5.5014391,5554.6743};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -920,7 +1030,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1672.5537,5.5014391,5554.4131};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -938,7 +1048,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1673.5192,5.5014391,5554.1519};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -956,7 +1066,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1674.4844,5.5014391,5553.8911};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -974,7 +1084,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1675.4498,5.5014391,5553.6304};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -992,7 +1102,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1676.4152,5.5014391,5553.3691};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1010,7 +1120,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1669.3967,5.5014391,5554.2305};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1028,7 +1138,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1670.3621,5.5014391,5553.9697};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1046,7 +1156,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1671.3274,5.5014391,5553.7085};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1064,7 +1174,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1672.2928,5.5014391,5553.4478};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1082,7 +1192,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1673.2582,5.5014391,5553.187};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1100,7 +1210,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1674.2234,5.5014391,5552.9258};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1118,7 +1228,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1675.1888,5.5014391,5552.6646};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1136,7 +1246,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1676.1542,5.5014391,5552.4038};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1154,7 +1264,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1669.1359,5.5014391,5553.2656};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1172,7 +1282,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1670.1011,5.5014391,5553.0044};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1190,7 +1300,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1671.0664,5.5014391,5552.7432};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1208,7 +1318,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1672.0319,5.5014391,5552.4824};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1226,7 +1336,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1672.9971,5.5014391,5552.2212};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1244,7 +1354,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1673.9625,5.5014391,5551.9604};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1262,7 +1372,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1674.9279,5.5014391,5551.6997};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1280,7 +1390,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1675.8932,5.5014391,5551.4385};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1298,7 +1408,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1668.8749,5.5014391,5552.2998};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1316,7 +1426,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1669.8401,5.5014391,5552.0386};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1334,7 +1444,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1670.8055,5.5014391,5551.7783};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1352,7 +1462,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1671.7709,5.5014391,5551.5171};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1370,7 +1480,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1672.7362,5.5014391,5551.2559};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1388,7 +1498,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1673.7015,5.5014391,5550.9951};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1406,7 +1516,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1674.6669,5.5014391,5550.7344};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1424,7 +1534,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1675.6322,5.5014391,5550.4731};
-						angles[]={0,0.26402292,0};
+						angles[]={0,0.26401594,0};
 					};
 					side="West";
 					flags=5;
@@ -1441,6 +1551,23 @@ class Mission
 			{
 			};
 			id=146;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="spawn units";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item4
 		{
@@ -1720,7 +1847,6 @@ class Mission
 				angles[]={0.0025132741,0,0.14154619};
 			};
 			name="Zeus_1";
-			isPlayer=1;
 			description="Game Master";
 			id=152;
 			type="VirtualCurator_F";
@@ -1761,7 +1887,6 @@ class Mission
 				position[]={1535,5.5,5080};
 			};
 			name="Zeus_2";
-			isPlayer=1;
 			description="Mod";
 			id=153;
 			type="VirtualCurator_F";
@@ -1802,7 +1927,6 @@ class Mission
 				position[]={1566,5.5,5080};
 			};
 			name="Zeus_3";
-			isPlayer=1;
 			description="Mod";
 			id=154;
 			type="VirtualCurator_F";
@@ -1843,7 +1967,6 @@ class Mission
 				position[]={1600,5.5,5081};
 			};
 			name="Zeus_4";
-			isPlayer=1;
 			description="Mod";
 			id=155;
 			type="VirtualCurator_F";
@@ -2211,6 +2334,865 @@ class Mission
 			};
 			title="Arsenal";
 			id=174;
+		};
+		class Item24
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1692.968,6.5431652,5577.604};
+				angles[]={0,4.7602806,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{[""setup"",this] remoteExec [""ZO_fnc_spectator"",2]}";
+				name="spectatorScreen";
+			};
+			id=175;
+			type="Land_TripodScreen_01_large_sand_F";
+		};
+		class Item25
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={1693.593,5.5,5575.5449};
+			};
+			title="spectator screen";
+			id=176;
+		};
+		class Item26
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={1641.1865,5.5,5558.5225};
+			};
+			title="rifleman loadout";
+			description="this object's gear will be used as loadout";
+			id=179;
+		};
+		class Item27
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={1646.7668,5.5,5557.0718};
+			};
+			title="spawn loadout";
+			description="this object's gear will be used when people first load in";
+			id=182;
+		};
+		class Item28
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={1638.3435,5.5,5559.2954};
+			};
+			title="medic loadout";
+			description="this object's gear will be used as loadout";
+			id=195;
+		};
+		class Item29
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={1635.4971,5.4861693,5559.9819};
+				angles[]={0,0,0.027492445};
+			};
+			title="automatic rifleman loadout";
+			description="this object's gear will be used as loadout";
+			id=196;
+		};
+		class Item30
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={1632.481,5.3851209,5560.8047};
+				angles[]={0.022498533,0,0.027494613};
+			};
+			title="teamleader loadout";
+			description="this object's gear will be used as loadout";
+			id=197;
+		};
+		class Item31
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={1630.1268,5.1053886,5561.3433};
+				angles[]={0.054944519,0,0.11202893};
+			};
+			title="engineer loadout";
+			description="this object's gear will be used as loadout";
+			id=204;
+		};
+		class Item32
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={1627.9047,4.8097472,5561.9565};
+				angles[]={0.054944519,0,0.23317997};
+			};
+			title="Grenadier loadout";
+			description="this object's gear will be used as loadout";
+			id=207;
+		};
+		class Item33
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=7;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1635.739,5.4868426,5560.9297};
+						angles[]={0.0024958209,0.26401594,0.047455505};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						init="call{if(isServer)then{ " \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadoutAutomaticRifleman"",(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
+						name="loadoutAutomaticRifleman";
+						description="Soldier";
+					};
+					id=202;
+					type="B_soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="hideObject";
+							expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1632.754,5.3745356,5561.7227};
+						angles[]={0.022497294,0.26401594,0.027488936};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						init="call{if(isServer)then{ " \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadoutTeamLeader"",(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
+						name="loadoutTeamLeader";
+						description="Soldier";
+					};
+					id=201;
+					type="B_Soldier_TL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="hideObject";
+							expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1641.448,5.5014391,5559.6157};
+						angles[]={0,0.26401594,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="call{if(isServer)then{ " \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadoutRifleman"",(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
+						name="loadoutrifleman";
+						description="Soldier";
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="arifle_MX_ACO_pointer_F";
+								optics="ACE_optic_Hamr_PIP";
+								flashlight="acc_pointer_IR";
+								class primaryMuzzleMag
+								{
+									name="30Rnd_65x39_caseless_mag";
+									ammoLeft=30;
+								};
+							};
+							class handgun
+							{
+								name="hgun_P07_F";
+								class primaryMuzzleMag
+								{
+									name="16Rnd_9x21_Mag";
+									ammoLeft=17;
+								};
+							};
+							class uniform
+							{
+								typeName="U_B_CombatUniform_mcam";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="30Rnd_65x39_caseless_mag";
+										count=2;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_PlateCarrier1_rgr";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=6;
+									class Item0
+									{
+										name="30Rnd_65x39_caseless_mag";
+										count=7;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="16Rnd_9x21_Mag";
+										count=2;
+										ammoLeft=17;
+									};
+									class Item2
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item5
+									{
+										name="HandGrenade";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							goggles="G_Combat";
+							hmd="NVGoggles";
+							headgear="H_HelmetB";
+						};
+					};
+					id=178;
+					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="hideObject";
+							expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1638.55,5.5008616,5560.2808};
+						angles[]={0.0024958209,0.26401594,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						init="call{if(isServer)then{ " \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadoutMedic"",(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
+						name="loadoutMedic";
+						description="Soldier";
+					};
+					id=203;
+					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="hideObject";
+							expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1630.365,5.1026163,5562.3496};
+						angles[]={0.022497294,0.26401594,0.14398967};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.85415107;
+						init="call{if(isServer)then{ " \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadoutEngineer"",(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
+						name="loadoutEngineer";
+						description="Soldier";
+					};
+					id=200;
+					type="B_engineer_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="hideObject";
+							expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1628.229,4.8055053,5562.9897};
+						angles[]={0.054942966,0.26401594,0.11203269};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						init="call{if(isServer)then{ " \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadoutGrenadier"",(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
+						name="loadoutGrenadier";
+						description="Soldier";
+					};
+					id=208;
+					type="B_Soldier_GL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="hideObject";
+							expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1646.968,5.5014391,5558.2456};
+						angles[]={0,0.26401594,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="call{if(isServer)then{ " \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadoutSpawn"",(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
+						name="loadoutSpawn";
+						description="Soldier";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_B_CombatUniform_mcam";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+						};
+					};
+					id=181;
+					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="hideObject";
+							expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=212;
 		};
 	};
 	class Connections
