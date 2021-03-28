@@ -63,6 +63,17 @@ class cfgFunctions {
     };
 };
 
+class CfgDiscordRichPresence {
+    applicationID="825728120401035336";             // Provided by discord
+    defaultDetails="Playing Arma 3 with Athena Company";            // Upper text
+    defaultState="AthenaCompany.co.uk";              // Lower text  
+    defaultLargeImageKey="ac";      // Large image
+    defaultLargeImageText="";     // Large image hover text
+    defaultSmallImageKey="arma3logo";      // Small image
+    defaultSmallImageText="";     // Small image hover text
+    useTimeElapsed=1;             // Show time elapsed since the player connected (1 - true, 0 - false)
+};
+
 class CfgORBAT
 {
 	class AthenaOrbat
