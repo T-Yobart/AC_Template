@@ -34,8 +34,8 @@ fn_addSpectatorAction = {
 	[
 		/* 0 object */                      	_object,
 		/* 1 action title */					"SPECTATE",
-		/* 2 idle icon */                   	"files\holdAction_spectator.paa",
-		/* 3 progress icon */               	"files\holdAction_spectator.paa",
+		/* 2 idle icon */                   	"",
+		/* 3 progress icon */               	"",
 		/* 4 condition to show */           	"(_this distance _target < 10)",
 		/* 5 condition for action */        	"(_this distance _target < 10)",
 		/* 6 code executed on start */      	{},

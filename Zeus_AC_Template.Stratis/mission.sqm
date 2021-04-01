@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1625.5726,19.843769,5550.8345};
-		dir[]={0.5417484,-0.6087988,0.57954532};
-		up[]={0.41573861,0.79332471,0.44474411};
-		aside[]={0.73052728,4.4703484e-008,-0.68288356};
+		pos[]={1652.7858,28.552963,5517.2734};
+		dir[]={0.43687013,-0.39652202,0.8074187};
+		up[]={0.18869784,0.91802311,0.34874871};
+		aside[]={0.87951547,2.3729808e-007,-0.4758791};
 	};
 };
 binarizationWanted=0;
@@ -2347,7 +2347,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{[""setup"",this] remoteExec [""ZO_fnc_spectator"",2]}";
+				init="call{if(isServer)then{[this] spawn {  " \n " params[""_box""];  " \n " waitUntil{missionNameSpace getVariable [""initdone"", false]};  " \n " [""setup"",_box] remoteExec [""ZO_fnc_spectator"",2]" \n "}}}";
 				name="spectatorScreen";
 			};
 			id=175;
