@@ -54,7 +54,7 @@ fn_addSpectatorAction = {
 };
 
 fn_openSpectator = {
-    ["Initialize", [player,[side player],true,false]] call BIS_fnc_EGSpectator;
+    ["Initialize", [player,[side player],false,false]] call BIS_fnc_EGSpectator;
     waituntil {!isnull (finddisplay 60492)};
     findDisplay 60492 displayAddEventHandler ["KeyDown", {
         params ["_ctrl","_button","_BtnShift","_BtnCtrl","_BtnAlt"];
