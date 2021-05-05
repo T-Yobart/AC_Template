@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=216;
+		nextID=219;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1652.7858,28.552963,5517.2734};
-		dir[]={0.43687013,-0.39652202,0.8074187};
-		up[]={0.18869784,0.91802311,0.34874871};
-		aside[]={0.87951547,2.3729808e-007,-0.4758791};
+		pos[]={1681.4753,8.5626688,5584.3911};
+		dir[]={0.31817067,-0.30407989,0.89794379};
+		up[]={0.10155845,0.95264655,0.28661904};
+		aside[]={0.94257814,-7.4505806e-009,-0.33398607};
 	};
 };
 binarizationWanted=0;
@@ -34,7 +34,6 @@ addons[]=
 	"A3_Data_F_Curator_Virtual",
 	"A3_Weapons_F_Ammoboxes",
 	"ace_cargo",
-	"A3_Structures_F_Mil_Flags",
 	"Desert",
 	"A3_Supplies_F_Orange_Ammoboxes",
 	"A3_Soft_F_Gamma_Truck_01",
@@ -63,7 +62,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=25;
+		items=24;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -115,122 +114,115 @@ class AddonsMetaData
 		};
 		class Item7
 		{
-			className="A3_Structures_F_Mil";
-			name="Arma 3 - Military Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item8
-		{
 			className="Desert";
 			name="Desert";
 		};
-		class Item9
+		class Item8
 		{
 			className="A3_Supplies_F_Orange";
 			name="Arma 3 Orange - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item10
+		class Item9
 		{
 			className="A3_Soft_F_Gamma";
 			name="Arma 3 - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item11
+		class Item10
 		{
 			className="A3_Soft_F_Exp";
 			name="Arma 3 Apex - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item12
+		class Item11
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item13
+		class Item12
 		{
 			className="ace_optics";
 			name="ACE3 - Optics";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item14
+		class Item13
 		{
 			className="ace_laserpointer";
 			name="ACE3 - Laser Pointer";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item15
+		class Item14
 		{
 			className="ace_smallarms";
 			name="ACE3 - Small Arms";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item16
+		class Item15
 		{
 			className="ace_ballistics";
 			name="ACE3 - Ballistics";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item17
+		class Item16
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item18
+		class Item17
 		{
 			className="ace_nightvision";
 			name="ACE3 - Night Vision";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item19
+		class Item18
 		{
 			className="ace_medical_engine";
 			name="ACE3 - Medical Engine";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item20
+		class Item19
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item21
+		class Item20
 		{
 			className="UK3CB_Factions_Equipment";
 			name="3CB Factions - Equipment";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item22
+		class Item21
 		{
 			className="ace_attach";
 			name="ACE3 - Attach";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item23
+		class Item22
 		{
 			className="ace_chemlights";
 			name="ace_chemlights";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item24
+		class Item23
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
@@ -238,6 +230,11 @@ class AddonsMetaData
 			url="http://ace3mod.com/";
 		};
 	};
+};
+dlcs[]=
+{
+	"ORANGE",
+	"Enoch"
 };
 randomSeed=13572791;
 class ScenarioData
@@ -369,7 +366,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1670.7015,5.5014391,5559.0571};
+						position[]={1670.702,5.5014391,5559.0566};
 						angles[]={0,0.26401594,0};
 					};
 					side="West";
@@ -377,6 +374,7 @@ class Mission
 					class Attributes
 					{
 						description="Soldier";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=147;
@@ -1847,6 +1845,7 @@ class Mission
 				angles[]={0.0025132741,0,0.14154619};
 			};
 			name="Zeus_1";
+			isPlayable=1;
 			description="Game Master";
 			id=152;
 			type="VirtualCurator_F";
@@ -1887,6 +1886,7 @@ class Mission
 				position[]={1535,5.5,5080};
 			};
 			name="Zeus_2";
+			isPlayable=1;
 			description="Mod";
 			id=153;
 			type="VirtualCurator_F";
@@ -1927,6 +1927,7 @@ class Mission
 				position[]={1566,5.5,5080};
 			};
 			name="Zeus_3";
+			isPlayable=1;
 			description="Mod";
 			id=154;
 			type="VirtualCurator_F";
@@ -1967,6 +1968,7 @@ class Mission
 				position[]={1600,5.5,5081};
 			};
 			name="Zeus_4";
+			isPlayable=1;
 			description="Mod";
 			id=155;
 			type="VirtualCurator_F";
@@ -2104,32 +2106,15 @@ class Mission
 		};
 		class Item14
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={1684.145,9.4768047,5595.7261};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="call{[this] spawn { " \n " params[""_flag""]; " \n " waitUntil{missionNameSpace getVariable [""initdone"", false]};  " \n " _flag call AC_fnc_flagAdd;" \n "} }";
-				name="spawnflag";
-			};
-			id=159;
-			type="Flag_Blue_F";
-		};
-		class Item15
-		{
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={1676.7972,5.5,5598.1523};
+				position[]={1676.797,5.5,5598.1519};
 			};
 			title="TP Pole";
 			id=160;
 		};
-		class Item16
+		class Item15
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2164,7 +2149,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item17
+		class Item16
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2199,7 +2184,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item18
+		class Item17
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2234,7 +2219,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item19
+		class Item18
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -2244,7 +2229,7 @@ class Mission
 			title="FOB Boxes";
 			id=169;
 		};
-		class Item20
+		class Item19
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2279,7 +2264,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item21
+		class Item20
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2315,7 +2300,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item22
+		class Item21
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -2325,7 +2310,7 @@ class Mission
 			title="Rearm";
 			id=173;
 		};
-		class Item23
+		class Item22
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -2335,7 +2320,7 @@ class Mission
 			title="Arsenal";
 			id=174;
 		};
-		class Item24
+		class Item23
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2353,7 +2338,7 @@ class Mission
 			id=175;
 			type="Land_TripodScreen_01_large_sand_F";
 		};
-		class Item25
+		class Item24
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -2363,7 +2348,7 @@ class Mission
 			title="spectator screen";
 			id=176;
 		};
-		class Item26
+		class Item25
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -2374,7 +2359,7 @@ class Mission
 			description="this object's gear will be used as loadout";
 			id=179;
 		};
-		class Item27
+		class Item26
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -2385,7 +2370,7 @@ class Mission
 			description="this object's gear will be used when people first load in";
 			id=182;
 		};
-		class Item28
+		class Item27
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -2396,7 +2381,7 @@ class Mission
 			description="this object's gear will be used as loadout";
 			id=195;
 		};
-		class Item29
+		class Item28
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -2408,7 +2393,7 @@ class Mission
 			description="this object's gear will be used as loadout";
 			id=196;
 		};
-		class Item30
+		class Item29
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -2420,7 +2405,7 @@ class Mission
 			description="this object's gear will be used as loadout";
 			id=197;
 		};
-		class Item31
+		class Item30
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -2432,7 +2417,7 @@ class Mission
 			description="this object's gear will be used as loadout";
 			id=204;
 		};
-		class Item32
+		class Item31
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -2444,7 +2429,7 @@ class Mission
 			description="this object's gear will be used as loadout";
 			id=207;
 		};
-		class Item33
+		class Item32
 		{
 			dataType="Group";
 			side="West";
@@ -3193,6 +3178,41 @@ class Mission
 			{
 			};
 			id=212;
+		};
+		class Item33
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1684.2533,6.3096552,5595.8984};
+				angles[]={0,3.5005195,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{[this] spawn { " \n " params[""_flag""]; " \n " waitUntil{missionNameSpace getVariable [""initdone"", false]};  " \n " _flag call AC_fnc_flagAdd;" \n "}; " \n "}";
+				name="spawnflag";
+			};
+			id=218;
+			type="Land_TripodScreen_01_dual_v1_sand_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections
