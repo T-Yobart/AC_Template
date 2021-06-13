@@ -20,7 +20,7 @@ _refreshTime =1;
 _flagClassName= "Flag_BI_F"; //cfgVehicle classname of the object you want to spawn as a "flag"
 
 //fob marker variables
-_fobColor = "colorBLUFOR"; //radius color
+_fobColor = "colorBLUFOR"; //marker & radius color
 _markerFobSetup = "b_installation"; //when FOB is static/setup
 _markerFobPacked = "b_service";     //when FOB is moving/packed
 _atDeathFobColor = "ColorGrey";     //color of markers at FOB destruction

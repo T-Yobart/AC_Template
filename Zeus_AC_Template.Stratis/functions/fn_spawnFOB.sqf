@@ -79,6 +79,7 @@ fn_setFobMarkers = {
 	_markerFob = createMarker [_markerFobName,_vhc];
 	_markerFobName setMarkerText _fobName;
 	_markerFobName setMarkerType _fobMarker;
+	_markerFobName setMarkerColor _fobColor;
 
 	//markerloop function
 	[_vhc,_markerFobName] remoteExec ["AC_fnc_fobMarkerLoop",2];
