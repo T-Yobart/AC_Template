@@ -13,3 +13,7 @@ player setUnitLoadout ((missionNamespace getVariable ["loadouts",[]]select{(_x s
 	"BIS_respSpecShowHeader",			// Top bar of the spectator UI including mission time
 	"BIS_respSpecLists"					// Show list of available units and locations on the left hand side
 ];
+
+if(missionNamespace getVariable 'enableRally')then{
+	call AC_fnc_rally;
+};

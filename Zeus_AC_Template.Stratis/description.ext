@@ -55,6 +55,7 @@ class cfgFunctions {
             file = "functions";
             class arsenalBox;
 			class unitTracker;
+			class rally;
 			class showFPS;
             class flagAdd{};
             class spawnFOB{};

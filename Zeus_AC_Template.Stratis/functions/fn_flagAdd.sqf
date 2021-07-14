@@ -11,7 +11,7 @@
  * None
  *
  * Examples:
- * _vhc remoteExec ["aze_fnc_flagAdd",2,true];
+ * _vhc remoteExec ["AC_fnc_flagAdd",2,true];
  */
 ////////////////////////////////////////////////
 //                 VARIABLES                  //
@@ -31,7 +31,7 @@ fn_addAction ={
 		fn_markerset = {
 			params["_markerRadiusName","_vhc"];
 			_fobColor = missionNameSpace getVariable "fobColor";	//radius color
-			createMarker [_markerRadiusName,_vhc];
+			createMarkerLocal [_markerRadiusName,_vhc];
 			_markerRadiusName setMarkerShapeLocal "ELLIPSE";
 			_markerRadiusName setMarkerBrushLocal "SolidBorder";
 			_markerRadiusName setMarkerSizeLocal [10,10];
@@ -96,13 +96,13 @@ fn_addAction ={
 					"select a marker with radius" remoteExec ["hint", _caller]
 				};
 
-				//reset markers alpha and size
-				{
-					deleteMarkerLocal _x;
-				} forEach _markerdb;
 			}else{
-				"succesful failure" remoteExec ["hint", _caller]
+				//"succesful failure" remoteExec ["hint", _caller]
 			};
+			//cleanup
+			{
+				deleteMarkerLocal _x;
+			} forEach _markerdb;
 		}else{
 			"no destination available" remoteExec ["hint", _caller]
 		};

@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=219;
+		nextID=221;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1681.4753,8.5626688,5584.3911};
-		dir[]={0.31817067,-0.30407989,0.89794379};
-		up[]={0.10155845,0.95264655,0.28661904};
-		aside[]={0.94257814,-7.4505806e-009,-0.33398607};
+		pos[]={1651.1249,30.710609,5515.3999};
+		dir[]={0.23928349,-0.6169771,0.74972171};
+		up[]={0.18759337,0.78698105,0.58776647};
+		aside[]={0.9526552,-1.4901161e-008,-0.30405238};
 	};
 };
 binarizationWanted=0;
@@ -263,7 +263,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=34;
+		items=31;
 		class Item0
 		{
 			dataType="Logic";
@@ -2337,13 +2337,30 @@ class Mission
 			};
 			id=175;
 			type="Land_TripodScreen_01_large_sand_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="files\Loading.paa";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item24
 		{
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={1693.593,5.5,5575.5449};
+				position[]={1695.6389,5.5,5576.7915};
 			};
 			title="spectator screen";
 			id=176;
@@ -2353,10 +2370,10 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={1641.1865,5.5,5558.5225};
+				position[]={1641.1841,5.5,5558.5273};
 			};
-			title="rifleman loadout";
-			description="this object's gear will be used as loadout";
+			title="custom loadouts";
+			description="these object's gear will be used as loadouts" \n "" \n "you can delete them to remove the loadouts " \n "or add  your own by copying the init field over and changing the _name";
 			id=179;
 		};
 		class Item26
@@ -2371,65 +2388,6 @@ class Mission
 			id=182;
 		};
 		class Item27
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={1638.3435,5.5,5559.2954};
-			};
-			title="medic loadout";
-			description="this object's gear will be used as loadout";
-			id=195;
-		};
-		class Item28
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={1635.4971,5.4861693,5559.9819};
-				angles[]={0,0,0.027492445};
-			};
-			title="automatic rifleman loadout";
-			description="this object's gear will be used as loadout";
-			id=196;
-		};
-		class Item29
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={1632.481,5.3851209,5560.8047};
-				angles[]={0.022498533,0,0.027494613};
-			};
-			title="teamleader loadout";
-			description="this object's gear will be used as loadout";
-			id=197;
-		};
-		class Item30
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={1630.1268,5.1053886,5561.3433};
-				angles[]={0.054944519,0,0.11202893};
-			};
-			title="engineer loadout";
-			description="this object's gear will be used as loadout";
-			id=204;
-		};
-		class Item31
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={1627.9047,4.8097472,5561.9565};
-				angles[]={0.054944519,0,0.23317997};
-			};
-			title="Grenadier loadout";
-			description="this object's gear will be used as loadout";
-			id=207;
-		};
-		class Item32
 		{
 			dataType="Group";
 			side="West";
@@ -2448,7 +2406,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="call{if(isServer)then{ " \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadoutAutomaticRifleman"",(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
+						init="call{if(isServer)then{ " \n "    _name=""AutomaticRifleman"";" \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadout""+_name,(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
 						name="loadoutAutomaticRifleman";
 						description="Soldier";
 					};
@@ -2536,7 +2494,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{if(isServer)then{ " \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadoutTeamLeader"",(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
+						init="call{if(isServer)then{ " \n "    _name=""TeamLeader"";" \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadout""+_name,(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
 						name="loadoutTeamLeader";
 						description="Soldier";
 					};
@@ -2624,7 +2582,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{if(isServer)then{ " \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadoutRifleman"",(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
+						init="call{if(isServer)then{ " \n "    _name=""Rifleman"";" \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadout""+_name,(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
 						name="loadoutrifleman";
 						description="Soldier";
 						class Inventory
@@ -2811,7 +2769,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{if(isServer)then{ " \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadoutMedic"",(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
+						init="call{if(isServer)then{ " \n "    _name=""Medic"";" \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadout""+_name,(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
 						name="loadoutMedic";
 						description="Soldier";
 					};
@@ -2900,7 +2858,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.85415107;
-						init="call{if(isServer)then{ " \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadoutEngineer"",(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
+						init="call{if(isServer)then{ " \n "    _name=""Engineer"";" \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadout""+_name,(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
 						name="loadoutEngineer";
 						description="Soldier";
 					};
@@ -2988,7 +2946,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{if(isServer)then{ " \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadoutGrenadier"",(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
+						init="call{if(isServer)then{ " \n "    _name=""Grenadier"";" \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadout""+_name,(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
 						name="loadoutGrenadier";
 						description="Soldier";
 					};
@@ -3076,7 +3034,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{if(isServer)then{ " \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadoutSpawn"",(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
+						init="call{if(isServer)then{ " \n "    _name=""Spawn"";" \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadout""+_name,(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
 						name="loadoutSpawn";
 						description="Soldier";
 						class Inventory
@@ -3179,7 +3137,7 @@ class Mission
 			};
 			id=212;
 		};
-		class Item33
+		class Item28
 		{
 			dataType="Object";
 			class PositionInfo
@@ -3213,6 +3171,52 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item29
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1670.399,6.3924227,5543.5112};
+				angles[]={0,4.9221601,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this hideObjectGlobal true;" \n "this allowDamage false;" \n "" \n "if (!isServer) exitWith {};" \n "[this] spawn { " \n " params[""_box""]; " \n " waitUntil{missionNameSpace getVariable [""initdone"", false]};  " \n " [_box,""Rally""] call AC_fnc_spawnFOB;" \n " _box setVariable [""fobPacked"",false,true];" \n "} }";
+				name="rally_fob";
+			};
+			id=219;
+			type="C_IDAP_supplyCrate_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[""FirstAidKit"",""Medikit""],[20,2]],[[],[]],[[""Binocular"",""MineDetector"",""ToolKit"",""H_PASGT_basic_blue_F"",""H_PASGT_basic_white_F"",""H_Cap_Black_IDAP_F"",""H_Cap_Orange_IDAP_F"",""H_Cap_White_IDAP_F"",""H_HeadBandage_clean_F"",""G_Respirator_white_F"",""G_EyeProtectors_F"",""V_EOD_blue_F"",""V_Plain_medical_F""],[1,1,1,1,1,2,2,2,2,2,2,1,4]],[[""B_Messenger_IDAP_F""],[2]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item30
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={1671.787,5.5,5542.3872};
+			};
+			title="rally";
+			description="dont touch";
+			id=220;
 		};
 	};
 	class Connections
