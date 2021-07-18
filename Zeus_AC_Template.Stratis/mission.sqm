@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1670.6307,34.57291,5522.499};
+		pos[]={1673.269,39.375042,5520.8516};
 		dir[]={-0.15920612,-0.68398815,0.71190852};
 		up[]={-0.14927502,0.72949302,0.66750044};
 		aside[]={0.97589469,0,0.21824211};
@@ -3201,7 +3201,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this allowDamage false;" \n "" \n "if (!isServer) exitWith {};" \n "[this] spawn { " \n " params[""_box""]; " \n " waitUntil{missionNameSpace getVariable [""initdone"", false]};  " \n " [_box,""Rally""] call AC_fnc_spawnFOB;" \n " _box setVariable [""fobPacked"",false,true];" \n " _box remoteExec [""removeAllActions"",-2,true];" \n "} }";
+				init="call{this allowDamage false;" \n "" \n "if (!isServer) exitWith {};" \n "[this] spawn { " \n " params[""_box""]; " \n " waitUntil{missionNameSpace getVariable [""initdone"", false]};  " \n " [_box,""Rally""] call AC_fnc_spawnFOB;" \n " _box setVariable [""fobPacked"",false,true];" \n " waitUntil{count(actionIDs rally_fob)>2};" \n " _box remoteExec [""removeAllActions"",0,true];" \n "} }";
 				name="rally_fob";
 			};
 			id=223;

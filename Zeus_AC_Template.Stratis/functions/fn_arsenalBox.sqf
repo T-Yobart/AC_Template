@@ -48,6 +48,43 @@ fn_initArsenal={
     }]remoteExec["bis_fnc_call", 0,true];
 };
 
+fn_setActions_rearm={
+    params["_box"];
+    //action to load saved loadout
+    [
+        _box,
+        "<t color='#0ff000'>Rearm</t>",
+        "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_unloadDevice_ca.paa",
+        "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_unloadDevice_ca.paa",
+        "(_this distance _target < 3) && (_target getVariable [""rearm"",true])",
+        "(_caller distance _target < 3) && (_target getVariable [""rearm"",true])",
+        {},
+        {},
+        {
+        [_caller, [_caller, "inventory_var"]] call BIS_fnc_loadInventory;
+        ["ace_medical_treatment_fullHealLocal", player, player] call CBA_fnc_targetEvent;
+        _target setVariable ["rearm",false];
+        },
+        {},
+        [],
+        1,
+        9,
+        false,
+        false
+    ] remoteExec ["BIS_fnc_holdActionAdd",0,true];
+    [_box , 
+    [  
+        "<t color='#ff0000'>no more rearm</t>", // title  
+        {},  
+        nil,  // arguments  
+        1.5,  // priority  
+        true,  // showWindow  
+        false,  // hideOnUse  
+        "",   // shortcut  
+        "!(_target getVariable [""rearm"",true])"  // condition  
+    ]]remoteExec ["addAction",0,true]
+};
+
 fn_setActions_loadLoadout={
     params["_box"];
     //action to load saved loadout
@@ -248,11 +285,11 @@ if(isServer) then{
         case 2:
         { //spawn rearm
             _object = _object call fn_createBox;
-            _object call fn_setActions_loadLoadout;
+            _object call fn_setActions_rearm;
         };
         case 3:
         { //set rearm actions to a box
-            _object call fn_setActions_loadLoadout;
+            _object call fn_setActions_rearm;
         };
     };
 };
