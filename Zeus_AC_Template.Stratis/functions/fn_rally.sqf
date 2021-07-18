@@ -45,7 +45,7 @@ fn_addActionRally ={
             if(	isNull objectParent _target &&  
                 300<(serverTime - (missionNamespace getVariable ['lastRallyTime',-300]))
             )then{
-                rally_fob setPos (position  _target);  
+                rally_fob setVehiclePosition [_target, [], 1, ""];
                 missionNamespace setVariable ['lastRallyTime',serverTime];  
                 _rally = missionNamespace getVariable ['lastRally',[]];  
                 if(_rally isEqualTo [])then{  
