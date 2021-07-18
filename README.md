@@ -8,6 +8,7 @@ Mission file provides an example of the setup required by the features
 ## Features
 
 - Unit-Tracker
+- single rally(respawn) system
 - Arsenal/Rearm box
 - FOB teleport system
 - preset loadouts
@@ -17,4 +18,4 @@ Most of the variables you can change are available in the [init server file](Zeu
 
 ## Functions 
 
-[Function](Zeus_AC_Template.Stratis/functions) files contain scripts used in the template as well as file headers which briefly explain how to use it  
+[Function](Zeus_AC_Template.Stratis/functions) files contain scripts used in the template as well as file headers which briefly explain how to use them
