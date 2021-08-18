@@ -1,4 +1,4 @@
-waitUntil{missionNameSpace getVariable ["initdone", false]}; 
+waitUntil{missionNameSpace getVariable ["initdone", false] && !isNil(missionNameSpace getVariable "loadoutoverride") } ; 
 if (side player != sideLogic) then{
 player setUnitLoadout ((missionNamespace getVariable ["loadouts",[]]select{(_x select 0) == "loadoutSpawn"})select 0 select 1);
 [player, [player, "inventory_var"]] call BIS_fnc_saveInventory;

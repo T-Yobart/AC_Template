@@ -55,10 +55,11 @@
  *     [
  *         _uniform, 
  *         [
- *             ["ACE_morphine",4],
- *             ["ACE_tourniquet",2],
- *             ["ACE_epinephrine",4],
- *             ["ACE_fieldDressing",20]
+ *             ["ACE_morphine",6],
+               ["ACE_tourniquet",2],
+               ["ACE_epinephrine",6],
+               ["ACE_fieldDressing",23],
+			   ["ACE_splint", 4]
  *         ]
  *     ],
  *     [
@@ -109,7 +110,7 @@ _watch="ItemWatch";
 _nightVision = "rhsusf_ANPVS_14";
 _weaponSingleUse = "rhs_weap_m136";
 _smoke="SmokeShell";
-_smokeAmount=1;
+_smokeAmount=2;
 _handgrenade="HandGrenade";
 _handgrenadeAmount=1;
 //main weapon
@@ -135,6 +136,9 @@ _arMagazineAmount=5;
 //Leader
 _backpackLeader = "TFAR_rt1523g_big_rhs";
 
+//Medic
+_backpackMedic = "MTP_Medicpack";
+
 //rifleman
 _riflemanSight="optic_Hamr";
 
@@ -159,7 +163,7 @@ if (isServer) then {
     //pistol mags
     _pistolMagazineArray=[_pistolMagazine,getNumber (configfile >> "CfgMagazines" >> _pistolMagazine >> "count")];
     _pistolMagazineSpares=[_pistolMagazine, _pistolMagazineAmount, _pistolMagazineArray select 1];
-    //gren mags
+    //grenadier mags
     _grenadierMagazineArray=[_grenadierMagazine,getNumber (configfile >> "CfgMagazines" >> _grenadierMagazine >> "count")];
     _grenadierMagazineSpares=[_grenadierMagazine, _grenadierMagazineAmount, _grenadierMagazineArray select 1];
     _grenadierGrenadesSpares=[_grenadierGrenade,_grenadierGrenadeAmount,1];
@@ -182,15 +186,7 @@ if (isServer) then {
                 [], //grenade
                 ""//bipod
             ],
-            [
-                _weaponSingleUse,
-                "", 
-                "", 
-                "", 
-                [],//ammo
-                [], 
-                ""
-            ],
+            [],
             [
                 _pistol, 
                 _pistolMuzzle, 
@@ -203,10 +199,11 @@ if (isServer) then {
             [
                 _uniform,
                 [
-                    ["ACE_morphine",4],
+                    ["ACE_morphine",6],
                     ["ACE_tourniquet",2],
-                    ["ACE_epinephrine",4],
-                    ["ACE_fieldDressing",20]
+                    ["ACE_epinephrine",6],
+                    ["ACE_fieldDressing",23],
+					["ACE_splint", 4]
                 ]
             ],
             [
@@ -220,7 +217,9 @@ if (isServer) then {
             ],
             [
                 _backpack,
-                []
+                [
+                    _arMagazineSpares
+                ]
             ],
             _headgear, //helmet
             "", //cosmetic
@@ -253,10 +252,11 @@ if (isServer) then {
             [
                 _uniform, 
                 [
-                    ["ACE_morphine",4],
+                    ["ACE_morphine",6],
                     ["ACE_tourniquet",2],
-                    ["ACE_epinephrine",4],
-                    ["ACE_fieldDressing",20]
+                    ["ACE_epinephrine",6],
+                    ["ACE_fieldDressing",23],
+					["ACE_splint", 4]
                 ]
             ],
             [
@@ -274,7 +274,15 @@ if (isServer) then {
             ],
             _headgear, //helmet
             "", //cosmetic
-            [],
+            [
+            	"Binocular",
+            	"",
+            	"",
+            	"",
+            	[],
+            	[],
+            	""
+            ],
             [_map, _gps, _radio, _compass, _watch, _nightVision]
         ]
     ];
@@ -311,10 +319,11 @@ if (isServer) then {
             [
                 _uniform, 
                 [
-                    ["ACE_morphine",4],
+                    ["ACE_morphine",6],
                     ["ACE_tourniquet",2],
-                    ["ACE_epinephrine",4],
-                    ["ACE_fieldDressing",20]
+                    ["ACE_epinephrine",6],
+                    ["ACE_fieldDressing",23],
+					["ACE_splint", 4]
                 ]
             ],
             [
@@ -374,10 +383,11 @@ if (isServer) then {
             [
                 _uniform, 
                 [
-                    ["ACE_morphine",4],
+                    ["ACE_morphine",6],
                     ["ACE_tourniquet",2],
-                    ["ACE_epinephrine",4],
-                    ["ACE_fieldDressing",20]
+                    ["ACE_epinephrine",6],
+                    ["ACE_fieldDressing",23],
+					["ACE_splint", 4]
                 ]
             ],
             [
@@ -390,13 +400,13 @@ if (isServer) then {
                 ]
             ],
             [
-                _backpack,
+                _backpackMedic,
                 [
                     ["ACE_salineIV",8],
                     ["ACE_morphine",10],
                     ["ACE_tourniquet",6],
-                    ["ACE_epinephrine",10],
-                    ["ACE_fieldDressing",40]
+                    ["ACE_epinephrine",20],
+                    ["ACE_fieldDressing",64]
                 ]
             ],
             _headgear, //helmet
@@ -438,10 +448,11 @@ if (isServer) then {
             [
                 _uniform, 
                 [
-                    ["ACE_morphine",4],
+                    ["ACE_morphine",6],
                     ["ACE_tourniquet",2],
-                    ["ACE_epinephrine",4],
-                    ["ACE_fieldDressing",20]
+                    ["ACE_epinephrine",6],
+                    ["ACE_fieldDressing",23],
+					["ACE_splint", 4]
                 ]
             ],
             [
@@ -457,7 +468,9 @@ if (isServer) then {
                 _backpack,
                 [
                     ["ToolKit", 1],
-                    ["MineDetector", 1]
+                    ["MineDetector", 1],
+					["DemoCharge_Remote_Mag", 2],
+					["ACE_Clacker", 1]
                 ]
             ],
             _headgear, //helmet
@@ -491,10 +504,11 @@ if (isServer) then {
             [
                 _uniform, 
                 [
-                    ["ACE_morphine",4],
+                    ["ACE_morphine",6],
                     ["ACE_tourniquet",2],
-                    ["ACE_epinephrine",4],
-                    ["ACE_fieldDressing",20]
+                    ["ACE_epinephrine",6],
+                    ["ACE_fieldDressing",23],
+					["ACE_splint", 4]
                 ]
             ],
             [
@@ -526,7 +540,13 @@ if (isServer) then {
             [],
             [
                 _uniform,
-                []
+                [
+					["ACE_morphine",6],
+                    ["ACE_tourniquet",2],
+                    ["ACE_epinephrine",6],
+                    ["ACE_fieldDressing",23],
+					["ACE_splint", 4]
+				]
             ],
             [],
             [], 
