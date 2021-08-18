@@ -66,6 +66,7 @@ missionNamespace setVariable ["groupRally", "HQ1PLT", true];
 // XEH_preinit for the poor
 missionNameSpace setVariable ["initdone", true, true];
 
+execVM "loadouts.sqf";
 execVM "arsenalContents.sqf";
 ////////////////////////////////////////////////
 //               FUNCTION LOOP                //

@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1673.269,39.375042,5520.8516};
-		dir[]={-0.15920612,-0.68398815,0.71190852};
-		up[]={-0.14927502,0.72949302,0.66750044};
-		aside[]={0.97589469,0,0.21824211};
+		pos[]={1644.3632,35.352295,5536.3452};
+		dir[]={-0.10115214,-0.73212194,0.67362142};
+		up[]={-0.10871781,0.68117362,0.72400492};
+		aside[]={0.988913,-7.4505806e-009,0.14849687};
 	};
 };
 binarizationWanted=0;
@@ -1560,7 +1560,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="[_this, _value] call CBA_fnc_setCallsign";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 					class Value
 					{
 						class data
@@ -2376,10 +2376,10 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={1641.1841,5.5,5558.5273};
+				position[]={1641.184,5.5,5558.5269};
 			};
 			title="custom loadouts";
-			description="these object's gear will be used as loadouts" \n "" \n "you can delete them to remove the loadouts " \n "or add  your own by copying the init field over and changing the _name";
+			description="these object's gear will be used as loadouts" \n "" \n "you can delete them to remove the loadouts " \n "or add  your own by copying the init field over " \n "and changing the _name variable";
 			id=179;
 		};
 		class Item26
@@ -2412,7 +2412,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="call{if(isServer)then{ " \n "    _name=""AutomaticRifleman"";" \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadout""+_name,(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
+						init="if (isServer) then { " \n "    _name=""AutomaticRifleman""; " \n "    [this,_name] spawn { " \n "        params[ " \n "            ""_unit"",""_name"" " \n "        ]; " \n "        waitUntil { " \n "            !isNil { " \n "                missionNamespace getVariable " \n "                ""loadoutoverride"" " \n "            } " \n "        }; " \n "        if (!(missionNamespace getVariable ""loadoutoverride"")) then { " \n "            _array = missionNamespace getVariable[""loadouts"", []]; " \n "            _array pushBack [""loadout""+_name,(getUnitLoadout _unit)];  " \n "            missionNamespace setVariable[""loadouts"", _array, true]; " \n "            _unit hideObjectGlobal true; " \n "            _unit enableSimulationGlobal false; " \n "        } " \n "    }; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false; " \n "}; " \n "";
 						name="loadoutAutomaticRifleman";
 						description="Soldier";
 					};
@@ -2500,7 +2500,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{if(isServer)then{ " \n "    _name=""TeamLeader"";" \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadout""+_name,(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
+						init="if (isServer) then { " \n "    _name=""TeamLeader""; " \n "    [this,_name] spawn { " \n "        params[ " \n "            ""_unit"",""_name"" " \n "        ]; " \n "        waitUntil { " \n "            !isNil { " \n "                missionNamespace getVariable " \n "                ""loadoutoverride"" " \n "            } " \n "        }; " \n "        if (!(missionNamespace getVariable ""loadoutoverride"")) then { " \n "            _array = missionNamespace getVariable[""loadouts"", []]; " \n "            _array pushBack [""loadout""+_name,(getUnitLoadout _unit)];  " \n "            missionNamespace setVariable[""loadouts"", _array, true]; " \n "            _unit hideObjectGlobal true; " \n "            _unit enableSimulationGlobal false; " \n "        } " \n "    }; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false; " \n "}; " \n "";
 						name="loadoutTeamLeader";
 						description="Soldier";
 					};
@@ -2588,7 +2588,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{if(isServer)then{ " \n "    _name=""Rifleman"";" \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadout""+_name,(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
+						init="if (isServer) then { " \n "    _name=""Rifleman""; " \n "    [this,_name] spawn { " \n "        params[ " \n "            ""_unit"",""_name"" " \n "        ]; " \n "        waitUntil { " \n "            !isNil { " \n "                missionNamespace getVariable " \n "                ""loadoutoverride"" " \n "            } " \n "        }; " \n "        if (!(missionNamespace getVariable ""loadoutoverride"")) then { " \n "            _array = missionNamespace getVariable[""loadouts"", []]; " \n "            _array pushBack [""loadout""+_name,(getUnitLoadout _unit)];  " \n "            missionNamespace setVariable[""loadouts"", _array, true]; " \n "            _unit hideObjectGlobal true; " \n "            _unit enableSimulationGlobal false; " \n "        } " \n "    }; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false; " \n "}; " \n "";
 						name="loadoutrifleman";
 						description="Soldier";
 						class Inventory
@@ -2775,7 +2775,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{if(isServer)then{ " \n "    _name=""Medic"";" \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadout""+_name,(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
+						init="if (isServer) then { " \n "    _name=""Medic""; " \n "    [this,_name] spawn { " \n "        params[ " \n "            ""_unit"",""_name"" " \n "        ]; " \n "        waitUntil { " \n "            !isNil { " \n "                missionNamespace getVariable " \n "                ""loadoutoverride"" " \n "            } " \n "        }; " \n "        if (!(missionNamespace getVariable ""loadoutoverride"")) then { " \n "            _array = missionNamespace getVariable[""loadouts"", []]; " \n "            _array pushBack [""loadout""+_name,(getUnitLoadout _unit)];  " \n "            missionNamespace setVariable[""loadouts"", _array, true]; " \n "            _unit hideObjectGlobal true; " \n "            _unit enableSimulationGlobal false; " \n "        } " \n "    }; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false; " \n "}; " \n "";
 						name="loadoutMedic";
 						description="Soldier";
 					};
@@ -2864,7 +2864,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.85415107;
-						init="call{if(isServer)then{ " \n "    _name=""Engineer"";" \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadout""+_name,(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
+						init="if (isServer) then { " \n "    _name=""Engineer""; " \n "    [this,_name] spawn { " \n "        params[ " \n "            ""_unit"",""_name"" " \n "        ]; " \n "        waitUntil { " \n "            !isNil { " \n "                missionNamespace getVariable " \n "                ""loadoutoverride"" " \n "            } " \n "        }; " \n "        if (!(missionNamespace getVariable ""loadoutoverride"")) then { " \n "            _array = missionNamespace getVariable[""loadouts"", []]; " \n "            _array pushBack [""loadout""+_name,(getUnitLoadout _unit)];  " \n "            missionNamespace setVariable[""loadouts"", _array, true]; " \n "            _unit hideObjectGlobal true; " \n "            _unit enableSimulationGlobal false; " \n "        } " \n "    }; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false; " \n "}; " \n "";
 						name="loadoutEngineer";
 						description="Soldier";
 					};
@@ -2952,7 +2952,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{if(isServer)then{ " \n "    _name=""Grenadier"";" \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadout""+_name,(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
+						init="if (isServer) then { " \n "    _name=""Grenadier""; " \n "    [this,_name] spawn { " \n "        params[ " \n "            ""_unit"",""_name"" " \n "        ]; " \n "        waitUntil { " \n "            !isNil { " \n "                missionNamespace getVariable " \n "                ""loadoutoverride"" " \n "            } " \n "        }; " \n "        if (!(missionNamespace getVariable ""loadoutoverride"")) then { " \n "            _array = missionNamespace getVariable[""loadouts"", []]; " \n "            _array pushBack [""loadout""+_name,(getUnitLoadout _unit)];  " \n "            missionNamespace setVariable[""loadouts"", _array, true]; " \n "            _unit hideObjectGlobal true; " \n "            _unit enableSimulationGlobal false; " \n "        } " \n "    }; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false; " \n "}; " \n "";
 						name="loadoutGrenadier";
 						description="Soldier";
 					};
@@ -3040,7 +3040,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{if(isServer)then{ " \n "    _name=""Spawn"";" \n "    _array=missionNamespace getVariable [""loadouts"",[]]; " \n "    _array pushBack [""loadout""+_name,(getUnitLoadout this)]; " \n "    missionNamespace setVariable [""loadouts"",_array,true]; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false " \n "}; " \n "}";
+						init="if (isServer) then { " \n "    _name=""Spawn""; " \n "    [this,_name] spawn { " \n "        params[ " \n "            ""_unit"",""_name"" " \n "        ]; " \n "        waitUntil { " \n "            !isNil { " \n "                missionNamespace getVariable " \n "                ""loadoutoverride"" " \n "            } " \n "        }; " \n "        if (!(missionNamespace getVariable ""loadoutoverride"")) then { " \n "            _array = missionNamespace getVariable[""loadouts"", []]; " \n "            _array pushBack [""loadout""+_name,(getUnitLoadout _unit)];  " \n "            missionNamespace setVariable[""loadouts"", _array, true]; " \n "            _unit hideObjectGlobal true; " \n "            _unit enableSimulationGlobal false; " \n "        } " \n "    }; " \n "    this hideObjectGlobal true; " \n "    this enableSimulationGlobal false; " \n "}; " \n "";
 						name="loadoutSpawn";
 						description="Soldier";
 						class Inventory
