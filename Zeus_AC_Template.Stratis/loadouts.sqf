@@ -94,8 +94,6 @@
 ////////////////////////////////////////////////
 //                 VARIABLES                  //
 ////////////////////////////////////////////////
-//switch to enable the override of editor bound loadouts
-_override = true;
 
 //commons
 _uniform = "rhs_uniform_cu_ocp";
@@ -557,8 +555,5 @@ if (isServer) then {
         ]
     ];
 
-    missionNamespace setVariable["loadoutoverride", _override, true];
-    if (_override) then {
-        missionNamespace setVariable["loadouts", _array, true];
-    }
+    missionNamespace setVariable["loadouts", _array, true];
 };

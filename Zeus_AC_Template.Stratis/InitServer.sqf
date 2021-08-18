@@ -1,6 +1,25 @@
 ////////////////////////////////////////////////
 //                 VARIABLES                  */
 ////////////////////////////////////////////////
+
+/*
+    @loadouts
+    @author: T. Yobart
+*/
+
+//loadouts override 
+// false means the editor's loadouts are used
+_override=false;
+
+
+/*
+    @rally
+    @author: T. Yobart
+*/
+//rallies
+_enableRally=true; //hides the action of moving rallies
+_groupRally="HQ1PLT"; // which group leader has the rally
+
 /*
     @unitracker
     @author: T. Yobart
@@ -34,6 +53,9 @@ _databaseVhc =  [];
 /*        DO NOT EDIT BELOW THIS LINE         */
 ////////////////////////////////////////////////
 
+//loadouts override
+missionNamespace setVariable["loadoutoverride", _override, true];
+
 //markerloops variable
 missionNameSpace setVariable ["refreshRate",_refreshTime,true];
 
@@ -60,13 +82,15 @@ missionNameSpace setVariable ["unitTrackerPlane", ["W1","W2","W3","W4","W5","W6"
 missionNameSpace setVariable ["unitTrackerMotorized", ["V1","V2","V3","V4","V5","V6","V7","V8","V9","V10"], true];
 
 //rallies
-missionNamespace setVariable ["enableRally", true, true]; //hides the action of moving rallies
-missionNamespace setVariable ["groupRally", "HQ1PLT", true];
+missionNamespace setVariable ["enableRally", _enableRally, true]; //hides the action of moving rallies
+missionNamespace setVariable ["groupRally", _groupRally, true];
 
 // XEH_preinit for the poor
 missionNameSpace setVariable ["initdone", true, true];
 
-execVM "loadouts.sqf";
+if(_override)then{
+    execVM "loadouts.sqf";
+}
 execVM "arsenalContents.sqf";
 ////////////////////////////////////////////////
 //               FUNCTION LOOP                //
