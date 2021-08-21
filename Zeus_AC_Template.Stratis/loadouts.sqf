@@ -2,7 +2,7 @@
  * @file_name: loadout.sqf
  * @file_author: T. Yobart
  *
- * give the ability to make and change loadouts for 
+ * Gives the ability to make and change loadouts for 
  * the arsenal through edition of the file
  *
  * Arguments:
@@ -14,9 +14,15 @@
  * Examples:
  * read following
  *
- * loadouts made in this file and the editor share 
- * the same format (template written further down)
- * simple variables have been setup for quick edition
+ * Loadouts made in this file and the editor share 
+ * the same format from bohemia 
+ * https://community.bistudio.com/wiki/Unit_Loadout_Array
+ * (template written further down)
+ *
+ * Simple variables have been setup for quick edition
+ * bear in mind the gear will be given 
+ * regardless of capacity constraints
+ * 
  * feel free to edit the loadout's individual template 
  * especially when mixing weapons as the accessories 
  * will conflict
@@ -56,10 +62,10 @@
  *         _uniform, 
  *         [
  *             ["ACE_morphine",6],
-               ["ACE_tourniquet",2],
-               ["ACE_epinephrine",6],
-               ["ACE_fieldDressing",23],
-			   ["ACE_splint", 4]
+ *             ["ACE_tourniquet",2],
+ *             ["ACE_epinephrine",6],
+ *             ["ACE_fieldDressing",23],
+ *             ["ACE_splint", 4]
  *         ]
  *     ],
  *     [
@@ -129,7 +135,7 @@ _handgrenadeAmount=1;
 //AR
 _arWeapon="rhs_weap_m249_pip";
 _arMagazine="rhsusf_200Rnd_556x45_box";
-_arMagazineAmount=5;
+_arMagazineAmount=2;
 
 //Leader
 _backpackLeader = "TFAR_rt1523g_big_rhs";
@@ -226,7 +232,7 @@ if (isServer) then {
         ]
     ];
     //leader loadout
-    _array pushBack["loadoutTeamLeader",
+    _array pushBack["loadoutSquadLeader",
         [
             [
                 _weapon, //weapon
@@ -478,7 +484,7 @@ if (isServer) then {
         ]
     ];
     //grenadier loadout
-    _array pushBack["loadoutGrenadier",
+    _array pushBack["loadoutTeamLeader",
         [
             [
                 _grenadierWeapon, //weapon
