@@ -80,6 +80,7 @@ missionNameSpace setVariable ["unitTrackerAir", ["Z1","Z2","Z3","Z4","Z5","Z6","
 missionNameSpace setVariable ["unitTrackerArmor", ["Y1","Y2","Y3","Y4","Y5","Y6","Y7","Y8","Y9","Y10"], true];
 missionNameSpace setVariable ["unitTrackerPlane", ["W1","W2","W3","W4","W5","W6","W7","W8","W9","W10"], true];
 missionNameSpace setVariable ["unitTrackerMotorized", ["V1","V2","V3","V4","V5","V6","V7","V8","V9","V10"], true];
+missionNameSpace setVariable ["unitTrackerMechanized", ["X1","X2","X3","X4","X5","X6","X7","X8","X9","X10"], true];
 
 //rallies
 missionNamespace setVariable ["enableRally", _enableRally, true]; //hides the action of moving rallies
