@@ -3,8 +3,34 @@
 */
 //arsenal contents
 _availableHeadgear = [
-	"BWA3_M92_Tropen",
-	"BWA3_Booniehat_Tropen"
+	"UK3CB_BAF_H_Mk7_Camo_A",
+	"UK3CB_BAF_H_Mk7_Camo_B",
+	"UK3CB_BAF_H_Mk7_Camo_C",
+	"UK3CB_BAF_H_Mk7_Camo_D",
+	"UK3CB_BAF_H_Mk7_Camo_E",
+	"UK3CB_BAF_H_Mk7_Camo_F",
+	"UK3CB_BAF_H_Mk7_Camo_CESS_A",
+	"UK3CB_BAF_H_Mk7_Camo_CESS_B",
+	"UK3CB_BAF_H_Mk7_Camo_CESS_C",
+	"UK3CB_BAF_H_Mk7_Camo_CESS_D",
+	"UK3CB_BAF_H_Mk7_Camo_ESS_A",
+	"UK3CB_BAF_H_Mk7_Camo_ESS_B",
+	"UK3CB_BAF_H_Mk7_Camo_ESS_C",
+	"UK3CB_BAF_H_Mk7_Camo_ESS_D",
+	"UK3CB_BAF_H_Mk7_Net_A",
+	"UK3CB_BAF_H_Mk7_Net_B",
+	"UK3CB_BAF_H_Mk7_Net_C",
+	"UK3CB_BAF_H_Mk7_Net_D",
+	"UK3CB_BAF_H_Mk7_Net_CESS_A",
+	"UK3CB_BAF_H_Mk7_Net_CESS_B",
+	"UK3CB_BAF_H_Mk7_Net_CESS_C",
+	"UK3CB_BAF_H_Mk7_Net_CESS_D",
+	"UK3CB_BAF_H_Mk7_Net_ESS_A",
+	"UK3CB_BAF_H_Mk7_Net_ESS_B",
+	"UK3CB_BAF_H_Mk7_Net_ESS_C",
+	"UK3CB_BAF_H_Mk7_Net_ESS_D",
+	"UK3CB_BAF_H_Boonie_MTP",
+	"UK3CB_BAF_H_Boonie_MTP_PRR"
 ];
 
 _availableGoggles = [
@@ -20,33 +46,48 @@ _availableGoggles = [
 ];
 
 _availableUniforms = [
-	"BWA3_Uniform_Tropen",
-	"BWA3_Uniform_sleeves_Tropen"
+	"UK3CB_BAF_U_CombatUniform_MTP",
+	"UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve",
+	"UK3CB_BAF_U_CombatUniform_MTP_TShirt"
 ];
 
 _availableVests = [
-	"BWA3_Uniform_sleeves_Tropen",
-	"BWA3_Vest_Grenadier_Tropen",
-	"BWA3_Vest_MachineGunner_Tropen",
-	"BWA3_Vest_Medic_Tropen",
-	"BWA3_Vest_Rifleman_Tropen",
-	"BWA3_Vest_Leader_Tropen"
+	"UK3CB_BAF_V_Osprey_Holster",
+	"UK3CB_BAF_V_Osprey_Grenadier_A",
+	"UK3CB_BAF_V_Osprey_Grenadier_B",
+	"UK3CB_BAF_V_Osprey_Medic_A",
+	"UK3CB_BAF_V_Osprey_Medic_B",
+	"UK3CB_BAF_V_Osprey_Medic_C",
+	"UK3CB_BAF_V_Osprey_Medic_D",
+	"UK3CB_BAF_V_Osprey_MG_A",
+	"UK3CB_BAF_V_Osprey_MG_B",
+	"UK3CB_BAF_V_Osprey_Rifleman_A",
+	"UK3CB_BAF_V_Osprey_Rifleman_B",
+	"UK3CB_BAF_V_Osprey_Rifleman_C",
+	"UK3CB_BAF_V_Osprey_Rifleman_D",
+	"UK3CB_BAF_V_Osprey_Rifleman_E",
+	"UK3CB_BAF_V_Osprey_Rifleman_F",
+	"UK3CB_BAF_V_Osprey_SL_A",
+	"UK3CB_BAF_V_Osprey_SL_B",
+	"UK3CB_BAF_V_Osprey_SL_C",
+	"UK3CB_BAF_V_Osprey_SL_D"
 ];
 
 _availableBackpacks = [
-	"BWA3_AssaultPack_Tropen",
-	"BWA3_Kitbag_Tropen_Medic",
-	"clf_tropentarn_prc117g_co",
-	"unv_tropentarn_big_rt1523g"
+	"B_AssaultPack_rgr",
+	"Green_Medicpack",
+	"UK3CB_BAF_B_Bergen_MTP_SL_L_A",
+	"UK3CB_BAF_B_Bergen_MTP_Radio_L_A"
 ];
 
 _availableWeapons = [
-	"BWA3_G36KA3",
-	"BWA3_G36A3_AG40",
-	"BWA3_MG4",
+	"UK3CB_BAF_L85A2_RIS_G",
+	"UK3CB_BAF_L85A2_UGL",
+	"rhs_weap_m249_pip",
 	"rhs_weap_m72a7",
-	"BWA3_PzF3_Tandem_Loaded",
-	"BWA3_P8"
+	"rhs_weap_M136",
+	"NLAW_F",
+	"rhsusf_weap_glock17g4"
 ];
 
 _availableOptics = [
@@ -57,16 +98,17 @@ _availableOptics = [
 	"rhsusf_acc_compm4",
 	"rhsusf_acc_T1_high",
 	"optic_Hamr",
-	"optic_Arco_blk_F"
+	"optic_Arco_blk_F",
+	"UK3CB_underbarrel_acc_grippod"
 ];
 
 _availableMagazines = [
-	"BWA3_30Rnd_556x45_G36",
+	"rhs_mag_30Rnd_556x45_M855A1_Stanag",
 	"rhs_mag_M441_HE",
 	"1Rnd_SmokeRed_Grenade_shell",
 	"1Rnd_Smoke_Grenade_shell",
-	"BWA3_200Rnd_556x45",
-	"BWA3_15Rnd_9x19_P8",
+	"rhsusf_200rnd_556x45_mixed_box",
+	"rhsusf_mag_17Rnd_9x19_FMJ",
 	"rhs_mag_m67",
 	"SmokeShell",
 	"SmokeShellGreen",

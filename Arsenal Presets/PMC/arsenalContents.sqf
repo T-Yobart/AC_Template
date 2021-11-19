@@ -3,52 +3,65 @@
 */
 //arsenal contents
 _availableHeadgear = [
-	"BWA3_M92_Fleck",
-	"BWA3_Booniehat_Fleck",
-	"H_Watchcap_camo"
+	"H_Cap_blk_ION",
+	"H_Watchcap_blk",
+	"H_Watchcap_cbr",
+	"H_Watchcap_khk",
+	"H_Bandanna_khk_hs",
+	"H_Bandanna_cbr",
+	"H_Booniehat_khk_hs",
+	"H_Booniehat_khk",
+	"H_Booniehat_oli",
+	"rhsusf_Bowman",
+	"rhsusf_bowman_cap"
 ];
 
 _availableGoggles = [
 	"UK3CB_G_Neck_Shemag_Tan",
 	"UK3CB_G_Neck_Shemag",
 	"UK3CB_G_Neck_Shemag_Oli",
-	"rhsusf_shemagh_grn",
-	"rhsusf_shemagh2_grn",
-	"rhsusf_shemagh2_gogg_grn",
-	"rhsusf_shemagh_gogg_grn",
+	"rhsusf_shemagh_tan",
+	"rhsusf_shemagh2_tan",
+	"rhsusf_shemagh2_gogg_tan",
+	"rhsusf_shemagh_gogg_tan",
 	"rhsusf_oakley_goggles_blk",
 	"rhs_googles_black",
-	"G_Lowprofile"
+	"G_Lowprofile",
+	"rhs_facewear_6m2_1",
+	"G_Bandanna_beast",
+	"G_Bandanna_sport",
+	"UK3CB_G_Neck_Shemag_KLR_blk",
+	"UK3CB_G_Neck_Shemag_KL_blk",
+	"UK3CB_G_Neck_Shemag_KR_blk"
 ];
 
 _availableUniforms = [
-	"BWA3_Uniform_Fleck",
-	"BWA3_Uniform_sleeves_Fleck"
+	"UK3CB_ADM_B_U_Shirt_Pants_01_BLU_WDL_ALT",
+	"UK3CB_ADM_B_U_Shirt_Pants_01_BRN_WDL_ALT",
+	"UK3CB_ADM_B_U_Shirt_Pants_01_GRN_WDL_ALT"
 ];
 
 _availableVests = [
-	"BWA3_Uniform_sleeves_Fleck",
-	"BWA3_Vest_Grenadier_Fleck",
-	"BWA3_Vest_MachineGunner_Fleck",
-	"BWA3_Vest_Medic_Fleck",
-	"BWA3_Vest_Rifleman_Fleck",
-	"BWA3_Vest_Leader_Fleck"
+	"V_PlateCarrier1_blk",
+	"V_PlateCarrier2_blk",
+	"V_TacVestIR_blk"
 ];
 
 _availableBackpacks = [
-	"BWA3_AssaultPack_Fleck",
-	"BWA3_Kitbag_Fleck_Medic",
-	"TFAR_rt1523g_bwmod",
-	"TFAR_rt1523g_big_bwmod"
+	"B_AssaultPack_blk",
+	"Black_Medicpack",
+	"clf_black_prc117g_co",
+	"unv_black_big_rt1523g"
 ];
 
 _availableWeapons = [
-	"BWA3_G36KA3",
-	"BWA3_G36A3_AG40",
-	"BWA3_MG4",
+	"arifle_TRG21_F",
+	"arifle_TRG21_GL_F",
+	"rhs_weap_m249_pip",
+	"rhs_weap_sr25",
 	"rhs_weap_m72a7",
-	"BWA3_PzF3_Tandem_Loaded",
-	"BWA3_P8"
+	"rhs_weap_M136",
+	"rhsusf_weap_m9"
 ];
 
 _availableOptics = [
@@ -59,16 +72,19 @@ _availableOptics = [
 	"rhsusf_acc_compm4",
 	"rhsusf_acc_T1_high",
 	"optic_Hamr",
-	"optic_Arco_blk_F"
+	"optic_Arco_blk_F",
+	"UK3CB_BAF_TA648",
+	"optic_dms"
 ];
 
 _availableMagazines = [
-	"BWA3_30Rnd_556x45_G36",
+	"rhs_mag_30Rnd_556x45_M855A1_Stanag",
 	"rhs_mag_M441_HE",
 	"1Rnd_SmokeRed_Grenade_shell",
 	"1Rnd_Smoke_Grenade_shell",
-	"BWA3_200Rnd_556x45",
-	"BWA3_15Rnd_9x19_P8",
+	"rhsusf_200rnd_556x45_mixed_box",
+	"rhsusf_20Rnd_762x51_SR25_m118_special_Mag",
+	"rhsusf_mag_15Rnd_9x19_FMJ",
 	"rhs_mag_m67",
 	"SmokeShell",
 	"SmokeShellGreen",
@@ -96,7 +112,7 @@ _availableMisc = [
 	"ItemGPS",
 	"ACE_CableTie",
 	"TFAR_anprc152",
-	"UK3CB_BAF_HMNVS"
+	"NVGoggles_OPFOR"
 ];
 
 ////////////////////////////////////////////////

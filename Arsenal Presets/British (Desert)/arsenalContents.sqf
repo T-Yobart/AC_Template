@@ -3,52 +3,60 @@
 */
 //arsenal contents
 _availableHeadgear = [
-	"BWA3_M92_Fleck",
-	"BWA3_Booniehat_Fleck",
-	"H_Watchcap_camo"
+	"UK3CB_BAF_H_Mk6_DDPM_A",
+	"UK3CB_BAF_H_Mk6_DDPM_B",
+	"UK3CB_BAF_H_Mk6_DDPM_C",
+	"UK3CB_BAF_H_Mk6_DDPM_D",
+	"UK3CB_BAF_H_Mk6_DDPM_E",
+	"UK3CB_BAF_H_Mk6_DDPM_F",
+	"UK3CB_BAF_H_Boonie_DDPM",
+	"UK3CB_BAF_H_Boonie_DDPM_PRR"
 ];
 
 _availableGoggles = [
 	"UK3CB_G_Neck_Shemag_Tan",
 	"UK3CB_G_Neck_Shemag",
-	"UK3CB_G_Neck_Shemag_Oli",
-	"rhsusf_shemagh_grn",
-	"rhsusf_shemagh2_grn",
-	"rhsusf_shemagh2_gogg_grn",
-	"rhsusf_shemagh_gogg_grn",
+	"rhsusf_shemagh_tan",
+	"rhsusf_shemagh2_tan",
+	"rhsusf_shemagh2_gogg_tan",
+	"rhsusf_shemagh_gogg_tan",
 	"rhsusf_oakley_goggles_blk",
 	"rhs_googles_black",
 	"G_Lowprofile"
 ];
 
 _availableUniforms = [
-	"BWA3_Uniform_Fleck",
-	"BWA3_Uniform_sleeves_Fleck"
+	"UK3CB_BAF_U_CombatUniform_DDPM",
+	"UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve"
 ];
 
 _availableVests = [
-	"BWA3_Uniform_sleeves_Fleck",
-	"BWA3_Vest_Grenadier_Fleck",
-	"BWA3_Vest_MachineGunner_Fleck",
-	"BWA3_Vest_Medic_Fleck",
-	"BWA3_Vest_Rifleman_Fleck",
-	"BWA3_Vest_Leader_Fleck"
+	"UK3CB_BAF_V_Osprey_DDPM1",
+	"UK3CB_BAF_V_Osprey_DDPM2",
+	"UK3CB_BAF_V_Osprey_DDPM3",
+	"UK3CB_BAF_V_Osprey_DDPM4",
+	"UK3CB_BAF_V_Osprey_DDPM5",
+	"UK3CB_BAF_V_Osprey_DDPM6",
+	"UK3CB_BAF_V_Osprey_DDPM7",
+	"UK3CB_BAF_V_Osprey_DDPM8",
+	"UK3CB_BAF_V_Osprey_DDPM9"
+
 ];
 
 _availableBackpacks = [
-	"BWA3_AssaultPack_Fleck",
-	"BWA3_Kitbag_Fleck_Medic",
-	"TFAR_rt1523g_bwmod",
-	"TFAR_rt1523g_big_bwmod"
+	"B_AssaultPack_cbr",
+	"Coyote_Medicpack",
+	"UK3CB_BAF_B_Bergen_DDPM_SL_A"
 ];
 
 _availableWeapons = [
-	"BWA3_G36KA3",
-	"BWA3_G36A3_AG40",
-	"BWA3_MG4",
+	"UK3CB_BAF_L85A2_RIS_G",
+	"UK3CB_BAF_L85A2_UGL",
+	"rhs_weap_m249_pip",
 	"rhs_weap_m72a7",
-	"BWA3_PzF3_Tandem_Loaded",
-	"BWA3_P8"
+	"rhs_weap_M136",
+	"NLAW_F",
+	"rhsusf_weap_glock17g4"
 ];
 
 _availableOptics = [
@@ -59,16 +67,17 @@ _availableOptics = [
 	"rhsusf_acc_compm4",
 	"rhsusf_acc_T1_high",
 	"optic_Hamr",
-	"optic_Arco_blk_F"
+	"optic_Arco_blk_F",
+	"UK3CB_underbarrel_acc_grippod"
 ];
 
 _availableMagazines = [
-	"BWA3_30Rnd_556x45_G36",
+	"rhs_mag_30Rnd_556x45_M855A1_Stanag",
 	"rhs_mag_M441_HE",
 	"1Rnd_SmokeRed_Grenade_shell",
 	"1Rnd_Smoke_Grenade_shell",
-	"BWA3_200Rnd_556x45",
-	"BWA3_15Rnd_9x19_P8",
+	"rhsusf_200rnd_556x45_mixed_box",
+	"rhsusf_mag_17Rnd_9x19_FMJ",
 	"rhs_mag_m67",
 	"SmokeShell",
 	"SmokeShellGreen",

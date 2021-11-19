@@ -3,52 +3,56 @@
 */
 //arsenal contents
 _availableHeadgear = [
-	"BWA3_M92_Fleck",
-	"BWA3_Booniehat_Fleck",
-	"H_Watchcap_camo"
+	"rhsusf_lwh_helmet_marpatd",
+	"rhsusf_lwh_helmet_marpatd_ess",
+	"rhsusf_lwh_helmet_marpatd_headset",
+	"rhs_booniehat2_marpatd"
 ];
 
 _availableGoggles = [
 	"UK3CB_G_Neck_Shemag_Tan",
 	"UK3CB_G_Neck_Shemag",
-	"UK3CB_G_Neck_Shemag_Oli",
-	"rhsusf_shemagh_grn",
-	"rhsusf_shemagh2_grn",
-	"rhsusf_shemagh2_gogg_grn",
-	"rhsusf_shemagh_gogg_grn",
+	"rhsusf_shemagh_tan",
+	"rhsusf_shemagh2_tan",
+	"rhsusf_shemagh2_gogg_tan",
+	"rhsusf_shemagh_gogg_tan",
 	"rhsusf_oakley_goggles_blk",
 	"rhs_googles_black",
 	"G_Lowprofile"
 ];
 
 _availableUniforms = [
-	"BWA3_Uniform_Fleck",
-	"BWA3_Uniform_sleeves_Fleck"
+	"rhs_uniform_FROG01_d"
 ];
 
 _availableVests = [
-	"BWA3_Uniform_sleeves_Fleck",
-	"BWA3_Vest_Grenadier_Fleck",
-	"BWA3_Vest_MachineGunner_Fleck",
-	"BWA3_Vest_Medic_Fleck",
-	"BWA3_Vest_Rifleman_Fleck",
-	"BWA3_Vest_Leader_Fleck"
+	"rhsusf_spc",
+	"rhsusf_spc_corpsman",
+	"rhsusf_spc_crewman",
+	"rhsusf_spc_iar",
+	"rhsusf_spc_light",
+	"rhsusf_spc_mg",
+	"rhsusf_spc_patchless",
+	"rhsusf_spc_patchless_radio",
+	"rhsusf_spc_rifleman",
+	"rhsusf_spc_squadleader",
+	"rhsusf_spc_teamleader"
 ];
 
 _availableBackpacks = [
-	"BWA3_AssaultPack_Fleck",
-	"BWA3_Kitbag_Fleck_Medic",
-	"TFAR_rt1523g_bwmod",
-	"TFAR_rt1523g_big_bwmod"
+	"B_AssaultPack_cbr",
+	"Coyote_Medicpack",
+	"clf_MARPAT_D_prc117g_co",
+	"unv_MARPAT_D_big_rt1523g"
 ];
 
 _availableWeapons = [
-	"BWA3_G36KA3",
-	"BWA3_G36A3_AG40",
-	"BWA3_MG4",
+	"UK3CB_M16A3",
+	"rhs_weap_m4a1_carryhandle_m203",
+	"rhs_weap_m249_pip",
 	"rhs_weap_m72a7",
-	"BWA3_PzF3_Tandem_Loaded",
-	"BWA3_P8"
+	"rhs_weap_M136",
+	"rhsusf_weap_m9"
 ];
 
 _availableOptics = [
@@ -63,12 +67,12 @@ _availableOptics = [
 ];
 
 _availableMagazines = [
-	"BWA3_30Rnd_556x45_G36",
+	"rhs_mag_30Rnd_556x45_M855A1_Stanag",
 	"rhs_mag_M441_HE",
 	"1Rnd_SmokeRed_Grenade_shell",
 	"1Rnd_Smoke_Grenade_shell",
-	"BWA3_200Rnd_556x45",
-	"BWA3_15Rnd_9x19_P8",
+	"rhsusf_200rnd_556x45_mixed_box",
+	"rhsusf_mag_15Rnd_9x19_FMJ",
 	"rhs_mag_m67",
 	"SmokeShell",
 	"SmokeShellGreen",
@@ -96,7 +100,7 @@ _availableMisc = [
 	"ItemGPS",
 	"ACE_CableTie",
 	"TFAR_anprc152",
-	"UK3CB_BAF_HMNVS"
+	"rhsusf_ANPVS_14"
 ];
 
 ////////////////////////////////////////////////

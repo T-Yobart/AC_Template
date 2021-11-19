@@ -3,72 +3,50 @@
 */
 //arsenal contents
 _availableHeadgear = [
-	"BWA3_M92_Fleck",
-	"BWA3_Booniehat_Fleck",
-	"H_Watchcap_camo"
+	"rhsgref_helmet_M1_erdl",
+	"H_Booniehat_khk",
+	"H_Bandanna_khk",
+	"rhsgref_helmet_M1_bare"
 ];
 
 _availableGoggles = [
 	"UK3CB_G_Neck_Shemag_Tan",
 	"UK3CB_G_Neck_Shemag",
-	"UK3CB_G_Neck_Shemag_Oli",
-	"rhsusf_shemagh_grn",
-	"rhsusf_shemagh2_grn",
-	"rhsusf_shemagh2_gogg_grn",
-	"rhsusf_shemagh_gogg_grn",
-	"rhsusf_oakley_goggles_blk",
-	"rhs_googles_black",
-	"G_Lowprofile"
+	"rhsusf_shemagh_tan",
+	"rhsusf_shemagh2_tan",
+	"G_Aviator"
 ];
 
 _availableUniforms = [
-	"BWA3_Uniform_Fleck",
-	"BWA3_Uniform_sleeves_Fleck"
+	"UK3CB_ADR_B_U_CombatUniform_02_CC"
 ];
 
 _availableVests = [
-	"BWA3_Uniform_sleeves_Fleck",
-	"BWA3_Vest_Grenadier_Fleck",
-	"BWA3_Vest_MachineGunner_Fleck",
-	"BWA3_Vest_Medic_Fleck",
-	"BWA3_Vest_Rifleman_Fleck",
-	"BWA3_Vest_Leader_Fleck"
+	"vest_alice_AC"
 ];
 
 _availableBackpacks = [
-	"BWA3_AssaultPack_Fleck",
-	"BWA3_Kitbag_Fleck_Medic",
-	"TFAR_rt1523g_bwmod",
-	"TFAR_rt1523g_big_bwmod"
+	"B_AssaultPack_rgr",
+	"Green_Medicpack",
+	"unv_olive_big_rt1523g"
 ];
 
 _availableWeapons = [
-	"BWA3_G36KA3",
-	"BWA3_G36A3_AG40",
-	"BWA3_MG4",
+	"UK3CB_M16A1",
+	"UK3CB_M60",
 	"rhs_weap_m72a7",
-	"BWA3_PzF3_Tandem_Loaded",
-	"BWA3_P8"
+	"rhsusf_weap_m1911a1",
+	"rhs_weap_rsp30_white"
 ];
 
 _availableOptics = [
-	"optic_Aco",
-	"optic_Holosight_blk_F",
-	"rhsusf_acc_eotech_xps3",
-	"rhsusf_acc_eotech_552",
-	"rhsusf_acc_compm4",
-	"rhsusf_acc_T1_high",
-	"optic_Hamr",
-	"optic_Arco_blk_F"
+	""
 ];
 
 _availableMagazines = [
-	"BWA3_30Rnd_556x45_G36",
-	"rhs_mag_M441_HE",
-	"1Rnd_SmokeRed_Grenade_shell",
-	"1Rnd_Smoke_Grenade_shell",
-	"BWA3_200Rnd_556x45",
-	"BWA3_15Rnd_9x19_P8",
+	"rhs_mag_30Rnd_556x45_M855A1_Stanag",
+	"UK3CB_M60_100rnd_762x51_RM",
+	"rhsusf_mag_7x45acp_MHP",
 	"rhs_mag_m67",
 	"SmokeShell",
 	"SmokeShellGreen",
@@ -95,8 +73,7 @@ _availableMisc = [
 	"ItemWatch",
 	"ItemGPS",
 	"ACE_CableTie",
-	"TFAR_anprc152",
-	"UK3CB_BAF_HMNVS"
+	"TFAR_anprc152"
 ];
 
 ////////////////////////////////////////////////

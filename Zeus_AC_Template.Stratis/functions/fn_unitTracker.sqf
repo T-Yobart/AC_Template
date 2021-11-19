@@ -23,6 +23,7 @@ fn_assetType={
 	if (_gname in (missionNameSpace getVariable "unitTrackerArmor")) then {_type = "b_armor";};
 	if (_gname in (missionNameSpace getVariable "unitTrackerPlane")) then {_type = "b_plane";};
 	if (_gname in (missionNameSpace getVariable "unitTrackerMotorized")) then {_type = "b_motor_inf";};
+	if (_gname in (missionNameSpace getVariable "unitTrackerMechanized")) then {_type = "b_mech_inf";};
 
 	_type;
 };
