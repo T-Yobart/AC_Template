@@ -3,77 +3,69 @@
 */
 //arsenal contents
 _availableHeadgear = [
-	"BWA3_M92_Fleck",
-	"BWA3_Booniehat_Fleck",
-	"H_Watchcap_camo"
+	"H_Simc_M2_506th_Helmet_5",
+	"H_Simc_M2_506th_Helmet",
+	"H_Simc_M2_506th_Helmet_2",
+	"H_Simc_M2_506th_Helmet_Early_1",
+	"H_Simc_M2_506th_Helmet_Early_2"
+	"H_Simc_M2_506th_Helmet_scrim_2",
+	"H_Simc_M2_506th_Helmet_NCO_2",
+	"H_Simc_M2_506th_Helmet_NCO_scream",
+	"H_Simc_M2_506th_Helmet_CO_2",
+	"H_Simc_M2_506th_Helmet_CO_scream"
 ];
 
 _availableGoggles = [
-	"UK3CB_G_Neck_Shemag_Tan",
-	"UK3CB_G_Neck_Shemag",
-	"UK3CB_G_Neck_Shemag_Oli",
-	"rhsusf_shemagh_grn",
-	"rhsusf_shemagh2_grn",
-	"rhsusf_shemagh2_gogg_grn",
-	"rhsusf_shemagh_gogg_grn",
-	"rhsusf_oakley_goggles_blk",
-	"rhs_googles_black",
-	"G_Lowprofile"
+	"G_Armband_Med"
 ];
 
 _availableUniforms = [
-	"BWA3_Uniform_Fleck",
-	"BWA3_Uniform_sleeves_Fleck"
+	"U_Simc_US_M43_82AB_Uniform"
 ];
 
 _availableVests = [
-	"BWA3_Uniform_sleeves_Fleck",
-	"BWA3_Vest_Grenadier_Fleck",
-	"BWA3_Vest_MachineGunner_Fleck",
-	"BWA3_Vest_Medic_Fleck",
-	"BWA3_Vest_Rifleman_Fleck",
-	"BWA3_Vest_Leader_Fleck"
+	"V_Simc_US_AB_Vest_Carbine_2",
+	"V_Simc_US_AB_Vest_Carbine_sekop_43",
+	"V_Simc_US_AB_Vest_Carbine",
+	"V_Simc_US_AB_Vest_SMG_sekop_43_alt"
 ];
 
 _availableBackpacks = [
-	"BWA3_AssaultPack_Fleck",
-	"BWA3_Kitbag_Fleck_Medic",
-	"TFAR_rt1523g_bwmod",
-	"TFAR_rt1523g_big_bwmod"
+	"B_LIB_SOV_RA_MedicalBag_Empty",
+	"B_Simc_US_M36_Musette",
+	"B_LIB_US_Radio",
+	"B_LIB_US_RocketBag_Empty"
 ];
 
 _availableWeapons = [
-	"BWA3_G36KA3",
-	"BWA3_G36A3_AG40",
-	"BWA3_MG4",
-	"rhs_weap_m72a7",
-	"BWA3_PzF3_Tandem_Loaded",
-	"BWA3_P8"
+	"LIB_M1_Garand",
+	"LIB_M1903A4_Springfield",
+	"LIB_M1918A2_BAR",
+	"LIB_M1A1_Thompson",
+	"LIB_M1A1_Carbine",
+	"LIB_Colt_M1911",
+	"LIB_DP28",
+	"LIB_M1A1_Bazooka"
 ];
 
 _availableOptics = [
-	"optic_Aco",
-	"optic_Holosight_blk_F",
-	"rhsusf_acc_eotech_xps3",
-	"rhsusf_acc_eotech_552",
-	"rhsusf_acc_compm4",
-	"rhsusf_acc_T1_high",
-	"optic_Hamr",
-	"optic_Arco_blk_F"
+	"LIB_ACC_GL_M7",
+	"LIB_ACC_M1_Bayo"
 ];
 
 _availableMagazines = [
-	"BWA3_30Rnd_556x45_G36",
-	"rhs_mag_M441_HE",
-	"1Rnd_SmokeRed_Grenade_shell",
-	"1Rnd_Smoke_Grenade_shell",
-	"BWA3_200Rnd_556x45",
-	"BWA3_15Rnd_9x19_P8",
-	"rhs_mag_m67",
-	"SmokeShell",
-	"SmokeShellGreen",
-	"SmokeShellBlue",
-	"DemoCharge_Remote_Mag"
+	"LIB_8Rnd_762x63",
+	"LIB_5Rnd_762x63",
+	"LIB_20Rnd_762x63",
+	"LIB_30Rnd_45ACP",
+	"LIB_15Rnd_762x33",
+	"LIB_7Rnd_45ACP",
+	"LIB_US_Mk_2",
+	"LIB_US_M18",
+	"LIB_US_M18_Green",
+	"LIB_US_M18_Red",
+	"LIB_1Rnd_G_Mk2",
+	"LIB_1Rnd_60mm_M6"
 ];
 
 _availableMisc = [
@@ -87,16 +79,14 @@ _availableMisc = [
 	"ACE_tourniquet",
 	"ACE_EntrenchingTool",
 	"ACE_DefusalKit",
-	"ACE_Clacker",
+	"ACE_LIB_LadungPM",
 	"ToolKit",
 	"Binocular",
 	"ItemMap",
 	"ItemCompass",
 	"ItemWatch",
-	"ItemGPS",
 	"ACE_CableTie",
-	"TFAR_anprc152",
-	"UK3CB_BAF_HMNVS"
+	"LIB_Ladung_Big_MINE_mag"
 ];
 
 ////////////////////////////////////////////////

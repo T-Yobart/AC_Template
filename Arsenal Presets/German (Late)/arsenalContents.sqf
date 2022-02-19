@@ -3,75 +3,65 @@
 */
 //arsenal contents
 _availableHeadgear = [
-	"BWA3_M92_Tropen",
-	"BWA3_Booniehat_Tropen"
+	"H_LIB_GER_HelmetCamo2",
+	"H_LIB_GER_HelmetCamo",
+	"H_LIB_GER_HelmetCamo4",
+	"H_LIB_GER_Cap",
+	"H_LIB_GER_OfficerCap"
 ];
 
 _availableGoggles = [
-	"UK3CB_G_Neck_Shemag_Tan",
-	"UK3CB_G_Neck_Shemag",
-	"rhsusf_shemagh_tan",
-	"rhsusf_shemagh2_tan",
-	"rhsusf_shemagh2_gogg_tan",
-	"rhsusf_shemagh_gogg_tan",
-	"rhsusf_oakley_goggles_blk",
-	"rhs_googles_black",
-	"G_Lowprofile"
+	"G_Armband_Med"
 ];
 
 _availableUniforms = [
-	"BWA3_Uniform_Tropen",
-	"BWA3_Uniform_sleeves_Tropen"
+	"U_LIB_GER_Soldier_camo2",
+	"U_LIB_GER_Funker",
+	"U_LIB_GER_Soldier_camo3"
 ];
 
 _availableVests = [
-	"BWA3_Uniform_sleeves_Tropen",
-	"BWA3_Vest_Grenadier_Tropen",
-	"BWA3_Vest_MachineGunner_Tropen",
-	"BWA3_Vest_Medic_Tropen",
-	"BWA3_Vest_Rifleman_Tropen",
-	"BWA3_Vest_Leader_Tropen"
+	"V_LIB_GER_VestG43",
+	"V_LIB_GER_VestMP40",
+	"V_LIB_GER_VestSTG",
+	"V_LIB_GER_FieldOfficer",
+	"V_LIB_GER_VestMG"
 ];
 
 _availableBackpacks = [
-	"BWA3_AssaultPack_Tropen",
-	"BWA3_Kitbag_Tropen_Medic",
-	"clf_tropentarn_prc117g_co",
-	"unv_tropentarn_big_rt1523g"
+	"B_LIB_GER_MedicBackpack_Empty",
+	"B_LIB_GER_A_frame",
+	"B_LIB_GER_Radio",
+	"B_LIB_GER_Panzer_Empty"
 ];
 
 _availableWeapons = [
-	"BWA3_G36KA3",
-	"BWA3_G36A3_AG40",
-	"BWA3_MG4",
-	"rhs_weap_m72a7",
-	"BWA3_PzF3_Tandem_Loaded",
-	"BWA3_P8"
+	"LIB_G41",
+	"LIB_MG34",
+	"LIB_K98_Late",
+	"LIB_K98ZF39",
+	"LIB_MP44",
+	"LIB_MP40",
+	"LIB_RPzB",
+	"LIB_P38"
 ];
 
 _availableOptics = [
-	"optic_Aco",
-	"optic_Holosight_blk_F",
-	"rhsusf_acc_eotech_xps3",
-	"rhsusf_acc_eotech_552",
-	"rhsusf_acc_compm4",
-	"rhsusf_acc_T1_high",
-	"optic_Hamr",
-	"optic_Arco_blk_F"
+	"LIB_ACC_K98_Bayo",
+	"LIB_ACC_GW_SB_Empty"
 ];
 
 _availableMagazines = [
-	"BWA3_30Rnd_556x45_G36",
-	"rhs_mag_M441_HE",
-	"1Rnd_SmokeRed_Grenade_shell",
-	"1Rnd_Smoke_Grenade_shell",
-	"BWA3_200Rnd_556x45",
-	"BWA3_15Rnd_9x19_P8",
-	"rhs_mag_m67",
-	"SmokeShell",
-	"SmokeShellGreen",
-	"SmokeShellBlue",
-	"DemoCharge_Remote_Mag"
+	"LIB_10Rnd_792x57_clip",
+	"LIB_50Rnd_792x57",
+	"LIB_5Rnd_792x57",
+	"LIB_30Rnd_792x33",
+	"LIB_32Rnd_9x19",
+	"LIB_Shg24",
+	"LIB_NB39",
+	"LIB_1Rnd_RPzB",
+	"LIB_8Rnd_9x19",
+	"LIB_1Rnd_G_SPRGR_30"
 ];
 
 _availableMisc = [
@@ -85,16 +75,14 @@ _availableMisc = [
 	"ACE_tourniquet",
 	"ACE_EntrenchingTool",
 	"ACE_DefusalKit",
-	"ACE_Clacker",
+	"ACE_LIB_LadungPM",
 	"ToolKit",
 	"Binocular",
 	"ItemMap",
 	"ItemCompass",
 	"ItemWatch",
-	"ItemGPS",
 	"ACE_CableTie",
-	"TFAR_anprc152",
-	"UK3CB_BAF_HMNVS"
+	"LIB_Ladung_Big_MINE_mag"
 ];
 
 ////////////////////////////////////////////////

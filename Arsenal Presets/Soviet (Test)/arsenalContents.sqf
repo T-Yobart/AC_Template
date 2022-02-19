@@ -3,55 +3,76 @@
 */
 //arsenal contents
 _availableHeadgear = [
-	"rhsgref_helmet_M1_erdl",
-	"H_Booniehat_khk",
-	"H_Bandanna_khk",
-	"rhsgref_helmet_M1_bare"
+	"H_LIB_SOV_RA_Helmet",
+	"H_LIB_SOV_RA_PrivateCap",
+	"H_LIB_SOV_RA_OfficerCap",
+	"H_LIB_SOV_TankHelmet"
 ];
 
 _availableGoggles = [
-	"UK3CB_G_Neck_Shemag_Tan",
-	"UK3CB_G_Neck_Shemag",
-	"rhsusf_shemagh_tan",
-	"rhsusf_shemagh2_tan",
-	"G_Aviator"
+	"G_Armband_Med"
 ];
 
 _availableUniforms = [
-	"UK3CB_ADR_B_U_CombatUniform_02_CC"
+	"U_LIB_SOV_Strelok",
+	"U_LIB_SOV_Leutenant_inset_pocket",
+	"U_LIB_SOV_Tank_ryadovoi"
 ];
 
 _availableVests = [
-	"vest_alice_AC"
+	"V_LIB_SOV_RA_OfficerVest",
+	"V_LIB_SOV_RAZV_OfficerVest",
+	"V_LIB_SOV_RA_MGBelt_Kit",
+	"V_LIB_SOV_RAZV_MGBelt_Kit",
+	"V_LIB_SOV_RA_MosinBelt",
+	"V_LIB_SOV_RA_TankOfficerSet",
+	"V_LIB_SOV_RA_MGBelt",
+	"V_LIB_SOV_RAZV_MGBelt",
+	"V_LIB_SOV_RA_PPShBelt",
+	"V_LIB_SOV_RAZV_PPShBelt",
+	"V_LIB_SOV_RA_PPShBelt_Mag",
+	"V_LIB_SOV_RAZV_PPShBelt_Mag",
+	"V_LIB_SOV_RA_SniperVest",
+	"V_LIB_SOV_RA_SVTBelt",
+	"V_LIB_SOV_RAZV_SVTBelt"
 ];
 
 _availableBackpacks = [
-	"B_AssaultPack_rgr",
-	"Green_Medicpack",
-	"unv_olive_big_rt1523g"
+	"B_LIB_SOV_RA_MedicalBag_Empty",
+	"B_LIB_SOV_RA_MGAmmoBag_Empty",
+	"B_LIB_SOV_RA_Radio",
+	"B_LIB_SOV_RA_Rucksack"
 ];
 
 _availableWeapons = [
-	"UK3CB_M16A1",
-	"UK3CB_M60",
-	"rhs_weap_m72a7",
-	"rhsusf_weap_m1911a1",
-	"rhs_weap_rsp30_white"
+	"LIB_M9130PU",
+	"LIB_M9130",
+	"LIB_SVT_40",
+	"LIB_PPSh41_m",
+	"LIB_PTRD",
+	"LIB_TT33",
+	"LIB_DP28",
+	"LIB_M1A1_Bazooka"
 ];
 
 _availableOptics = [
-	""
+	"LIB_ACC_GL_DYAKONOV_Empty",
+	"LIB_ACC_M1891_Bayo"
 ];
 
 _availableMagazines = [
-	"rhs_mag_30Rnd_556x45_M855A1_Stanag",
-	"UK3CB_M60_100rnd_762x51_RM",
-	"rhsusf_mag_7x45acp_MHP",
-	"rhs_mag_m67",
-	"SmokeShell",
-	"SmokeShellGreen",
-	"SmokeShellBlue",
-	"DemoCharge_Remote_Mag"
+	"LIB_8Rnd_762x25",
+	"LIB_5Rnd_762x54",
+	"LIB_10Rnd_762x54",
+	"LIB_35Rnd_762x25",
+	"LIB_71Rnd_762x25",
+	"LIB_47Rnd_762x54",
+	"LIB_1Rnd_145x114",
+	"LIB_RDG",
+	"LIB_Rg42",
+	"LIB_Rpg6",
+	"LIB_1Rnd_G_DYAKONOV",
+	"LIB_1Rnd_60mm_M6"
 ];
 
 _availableMisc = [
@@ -65,15 +86,14 @@ _availableMisc = [
 	"ACE_tourniquet",
 	"ACE_EntrenchingTool",
 	"ACE_DefusalKit",
-	"ACE_Clacker",
+	"ACE_LIB_LadungPM",
 	"ToolKit",
 	"Binocular",
 	"ItemMap",
 	"ItemCompass",
 	"ItemWatch",
-	"ItemGPS",
 	"ACE_CableTie",
-	"TFAR_anprc152"
+	"LIB_Ladung_Big_MINE_mag"
 ];
 
 ////////////////////////////////////////////////
