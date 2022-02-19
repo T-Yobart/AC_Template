@@ -19,6 +19,7 @@ _override=true;
 //rallies
 _enableRally=true; //hides the action of moving rallies
 _groupRally="HQ1PLT"; // which group leader has the rally
+_groupRallymax=7; //amount of times you can place the rally
 
 /*
     @unitracker
@@ -85,6 +86,8 @@ missionNameSpace setVariable ["unitTrackerMechanized", ["X1","X2","X3","X4","X5"
 //rallies
 missionNamespace setVariable ["enableRally", _enableRally, true]; //hides the action of moving rallies
 missionNamespace setVariable ["groupRally", _groupRally, true];
+missionNamespace setVariable ["groupRallymax", _groupRallymax, true];
+missionNamespace setVariable ["groupRallycount", 0, true];
 
 // XEH_preinit for the poor
 missionNameSpace setVariable ["initdone", true, true];

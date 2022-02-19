@@ -47,6 +47,7 @@ fn_addActionRally ={
             )then{
                 rally_fob setVehiclePosition [_target, [], 1, ""];
                 missionNamespace setVariable ['lastRallyTime',serverTime];  
+                missionNamespace setVariable ['groupRallycount',(missionNamespace getVariable 'groupRallycount')+1,true];
                 _rally = missionNamespace getVariable ['lastRally',[]];  
                 if(_rally isEqualTo [])then{  
                     _rally remoteExec["BIS_fnc_removeRespawnPosition",2,true]; 
@@ -63,7 +64,8 @@ fn_addActionRally ={
         true,  // showWindow  
         true,  // hideOnUse  
         "",   // shortcut  
-        "groupID group _target == (missionNamespace getVariable 'groupRally') && 
+        "(missionNamespace getVariable 'groupRallycount')<(missionNamespace getVariable 'groupRallymax') &&
+        groupID group _target == (missionNamespace getVariable 'groupRally') && 
         _target == leader _target &&
         (missionNamespace getVariable 'enableRally')  
         "  // condition  
