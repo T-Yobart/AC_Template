@@ -9,7 +9,7 @@
 
 //loadouts override 
 // false means the editor's loadouts are used
-_override=false;
+_override=true;
 
 
 /*
