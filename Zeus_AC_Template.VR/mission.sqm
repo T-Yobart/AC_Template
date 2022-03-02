@@ -8,14 +8,14 @@ class EditorData
 	toggles=549;
 	class ItemIDProvider
 	{
-		nextID=117;
+		nextID=119;
 	};
 	class Camera
 	{
-		pos[]={3648.0737,23.985558,5339.373};
-		dir[]={0.39999205,-0.40469283,-0.82233208};
-		up[]={0.17701726,0.91445273,-0.36392468};
-		aside[]={-0.89926153,-1.4901161e-008,-0.43741143};
+		pos[]={3643.5183,10.348917,5317.7124};
+		dir[]={0.77742362,-0.58599091,0.22853306};
+		up[]={0.56220323,0.81031764,0.16526644};
+		aside[]={0.282029,0,-0.95940602};
 	};
 };
 binarizationWanted=0;
@@ -266,7 +266,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=32;
+		items=33;
 		class Item0
 		{
 			dataType="Logic";
@@ -3257,6 +3257,34 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item32
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3647.1191,5.0014391,5319.2593};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=118;
+					type="B_Competitor_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=117;
 		};
 	};
 	class Connections

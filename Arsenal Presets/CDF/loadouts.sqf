@@ -125,6 +125,8 @@ _weaponMagazineAmount=8;
 _weaponMuzzle="";
 _weaponAccessory="";
 _weaponSight="";
+//One Use Launcher
+_OneUseLauncher="rhs_weap_rpg26";
 //Sidearm
 _pistol="hgun_Rook40_F";
 _pistolMagazine="16Rnd_9x21_Mag";
@@ -200,11 +202,11 @@ if (isServer) then {
     _array pushBack["loadoutRifleman",
         [
             [_weapon,_weaponMuzzle,_weaponAccessory,_weaponSight,_WeaponMagazineArray,[],""],
-            [],
+            [_OneUseLauncher,"","","",["",1],[],""],
             [],
             [_uniform,[["ACE_morphine",10],["ACE_tourniquet",2],["ACE_epinephrine",10],["ACE_splint", 4],["ACE_fieldDressing",20]]],
             [_vest,[[""],_smokes,_grenades,_weaponMagazineSpares]],
-            [_backpack,[[["rhs_weap_rpg26", "", "", "", [],[], ""], 1],["ACE_EntrenchingTool", 1],["rhs_100Rnd_762x54mmR_green",1,100]]],
+            [_backpack,[[[_OneUseLauncher,"","","",["",1],[],""], 1],["ACE_EntrenchingTool", 1],["rhs_100Rnd_762x54mmR_green",1,100]]],
             _headgear, //helmet
             "", //cosmetic
             [],
