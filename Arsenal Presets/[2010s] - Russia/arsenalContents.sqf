@@ -3,89 +3,94 @@
 */
 //arsenal contents
 _availableHeadgear = [
-	"rhsusf_ach_helmet_ocp",
-	"rhsusf_ach_helmet_ocp_alt",
-	"rhsusf_ach_helmet_ESS_ocp",
-	"rhsusf_ach_helmet_ESS_ocp_alt",
-	"rhsusf_ach_helmet_headset_ocp",
-	"rhsusf_ach_helmet_headset_ocp_alt",
-	"rhsusf_ach_helmet_headset_ess_ocp",
-	"rhsusf_ach_helmet_headset_ess_ocp_alt",
-	"rhsusf_ach_helmet_camo_ocp",
-	"rhs_Booniehat_ocp",
-	"rhsusf_patrolcap_ocp"
+	"rhs_6b47_emr",
+	"rhs_6b47_6B50",
+	"rhs_fieldcap_digi",
+	"rhs_beanie_green",
+	"H_Booniehat_oli",
+	"rhs_zsh7a_mike_alt",
+	"rhs_zsh7a_mike",
+	"rhs_tsh4",
+	"rhs_tsh4_ess",
+	"rhs_tsh4_ess_bala"
 ];
 
 _availableGoggles = [
-	"UK3CB_G_Neck_Shemag_Tan",
-	"UK3CB_G_Neck_Shemag",
-	"rhsusf_shemagh_tan",
-	"rhsusf_shemagh2_tan",
-	"rhsusf_shemagh2_gogg_tan",
-	"rhsusf_shemagh_gogg_tan",
-	"rhsusf_oakley_goggles_blk",
-	"rhs_googles_black",
-	"G_Lowprofile"
+	"rhs_balaclava",
+	"G_Bandanna_oli",
+	"G_Lowprofile",
+	"usm_scarf",
+	"usm_scarf2",
+	"G_CDF90_Black_Gloves"
 ];
 
 _availableUniforms = [
-	"rhs_uniform_cu_ocp"
+	"rhs_uniform_vkpo_gloves_alt",
+	"rhs_uniform_vkpo_alt",
+	"rhs_uniform_df15",
+	"len_lwp_uniform_soldier_80_blue"
 ];
 
 _availableVests = [
-	"rhsusf_spcs_ocp_crewman",
-	"rhsusf_spcs_ocp_grenadier",
-	"rhsusf_spcs_ocp_machinegunner",
-	"rhsusf_spcs_ocp_medic",
-	"rhsusf_spcs_ocp",
-	"rhsusf_spcs_ocp_rifleman_alt",
-	"rhsusf_spcs_ocp_rifleman",
-	"rhsusf_spcs_ocp_saw",
-	"rhsusf_spcs_ocp_sniper",
-	"rhsusf_spcs_ocp_squadleader",
-	"rhsusf_spcs_ocp_teamleader_alt",
-	"rhsusf_spcs_ocp_teamleader"
+	"rhs_6b45_rifleman",
+	"rhs_6b45_rifleman_2",
+	"rhs_6b45_grn",
+	"rhs_6b45_off",
+	"rhs_6b45_mg",
+	"rhs_6b45_light",
+	"rhs_6b45_holster"
 ];
 
 _availableBackpacks = [
-	"rhsusf_falconii_mc",
-	"Coyote_Medicpack",
-	"TFAR_rt1523g_rhs",
-	"TFAR_rt1523g_big_rhs"
+	"B_AssaultPack_rgr",
+	"Green_Medicpack",
+	"unv_olive_big_rt1523g",
+	"clf_Olive_prc117g_co"
 ];
 
 _availableWeapons = [
-	"rhs_weap_m4a1_carryhandle",
-	"rhs_weap_m4a1_carryhandle_m203",
-	"rhs_weap_m249_pip",
-	"rhs_weap_m72a7",
-	"rhs_weap_M136",
-	"rhsusf_weap_m9"
+	"rhs_weap_ak74mr",
+	"rhs_weap_ak74mr_gp25",
+	"rhs_weap_pkp",
+	"rhs_weap_rpk74m",
+	"rhs_weap_svds",
+	"rhs_weap_rpg7",
+	"rhs_weap_rpg26",
+	"rhs_weap_6p53"
 ];
 
 _availableOptics = [
-	"optic_Aco",
 	"optic_Holosight_blk_F",
-	"rhsusf_acc_eotech_xps3",
-	"rhsusf_acc_eotech_552",
 	"rhsusf_acc_compm4",
-	"rhsusf_acc_T1_high",
+	"optic_ACO_grn",
+	"optic_Aco",
+	"rhs_acc_rakursPM",
+	"optic_Arco_blk_F",
 	"optic_Hamr",
-	"optic_Arco_blk_F"
+	"rhs_acc_1p63",
+	"rhs_acc_pkas_pkp",
+	"rhs_acc_pso1m2",
+	"rhs_acc_pgo7v"
 ];
 
 _availableMagazines = [
-	"rhs_mag_30Rnd_556x45_M855A1_Stanag",
-	"rhs_mag_M441_HE",
-	"1Rnd_SmokeRed_Grenade_shell",
-	"1Rnd_Smoke_Grenade_shell",
-	"rhsusf_200rnd_556x45_mixed_box",
-	"rhsusf_mag_15Rnd_9x19_FMJ",
-	"rhs_mag_m67",
+	"ACE_SpareBarrel",
+	"rhs_30Rnd_545x39_7N10_AK",
+	"rhs_60Rnd_545X39_AK_Green",
+	"rhs_VOG25",
+	"rhs_GRD40_White",
+	"rhs_GRD40_Red",
+	"rhs_100Rnd_762x54mmR_green",
+	"rhs_10Rnd_762x54mmR_7N1",
 	"SmokeShell",
+	"SmokeShellRed",
 	"SmokeShellGreen",
 	"SmokeShellBlue",
-	"DemoCharge_Remote_Mag"
+	"rhs_mag_rgd5",
+	"rhs_rpg7_PG7V_mag",
+	"rhs_rpg7_PG7VL_mag",
+	"rhs_rpg7_TBG7V_mag",
+	"rhs_18rnd_9x21mm_7N28"
 ];
 
 _availableMisc = [
@@ -99,16 +104,19 @@ _availableMisc = [
 	"ACE_tourniquet",
 	"ACE_EntrenchingTool",
 	"ACE_DefusalKit",
-	"ACE_Clacker",
+	"ACE_M26_Clacker",
 	"ToolKit",
 	"Binocular",
+	"Rangefinder",
 	"ItemMap",
 	"ItemCompass",
 	"ItemWatch",
-	"ItemGPS",
 	"ACE_CableTie",
-	"TFAR_anprc152",
-	"rhsusf_ANPVS_14"
+	"DemoCharge_Remote_Mag",
+	"ACE_Flashlight_XL50",
+	"ACE_microDAGR",
+	"ACE_SpraypaintRed",
+	"ACE_wirecutter"
 ];
 
 ////////////////////////////////////////////////

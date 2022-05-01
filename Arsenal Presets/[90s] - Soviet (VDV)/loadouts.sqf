@@ -122,9 +122,11 @@ _handgrenadeAmount=1;
 _weapon="rhs_weap_aks74";
 _weaponMagazine="rhs_30Rnd_545x39_7N6M_AK";
 _weaponMagazineAmount=8;
-_weaponMuzzle="";
+_weaponMuzzle="rhs_acc_dtk1983";
 _weaponAccessory="";
 _weaponSight="";
+//One Use Launcher
+_OneUseLauncher="rhs_weap_rpg26";
 //Sidearm
 _pistol="rhs_weap_6p53";
 _pistolMagazine="rhs_18rnd_9x21mm_7N28";
@@ -133,9 +135,9 @@ _pistolMuzzle="";
 _pistolAccessory="";
 _pistolSight="";
 //LMG
-_mgWeapon="rhs_weap_rpk74m";
-_mgMagazine="rhs_60Rnd_545X39_AK_Green";
-_mgMagazineAmount=4;
+_mgWeapon="gm_lmgrpk_brn";
+_mgMagazine="rhs_75Rnd_762x39mm_tracer";
+_mgMagazineAmount=3;
 _mgAccessory="";
 //HMG
 _hmgWeapon="rhs_weap_pkm";
@@ -153,7 +155,7 @@ _atAmmo="rhs_rpg7_PG7V_mag";
 _atBackpack="rhs_rpg_2";
 //grenadier
 _grenadierWeapon = "rhs_weap_aks74_gp25";
-_grenadierWeaponMuzzle = "";
+_grenadierWeaponMuzzle = "rhs_acc_dtk1983";
 _grenadierMagazine = "rhs_30Rnd_545x39_7N6M_AK";
 _grenadierMagazineAmount = 8; 
 _grenadierGrenade="rhs_VOG25";
@@ -165,6 +167,12 @@ _sniperMagazineAmount=10;
 _sniperMuzzle="";
 _sniperAccessory="";
 _sniperSight="rhs_acc_pso1m2";
+//Crewman
+_headgearCrewman = "rhs_tsh4_ess"; 
+_uniformCrewman = "len_lwp_uniform_soldier_80_blue";
+//Pilot
+_headgearPilot = "rhs_zsh7a_mike_alt";
+_uniformPilot = "gm_pl_airforce_uniform_pilot_80_gry"; 
 
 ////////////////////////////////////////////////
 //               FUNCTION LOOP                //
@@ -200,11 +208,11 @@ if (isServer) then {
     _array pushBack["loadoutRifleman",
         [
             [_weapon,_weaponMuzzle,_weaponAccessory,_weaponSight,_WeaponMagazineArray,[],""],
-            [],
+            [_OneUseLauncher,"","","",["",1],[],""],
             [],
             [_uniform,[["ACE_morphine",10],["ACE_tourniquet",2],["ACE_epinephrine",10],["ACE_splint", 4],["ACE_fieldDressing",20]]],
-            [_vest,[[""],_smokes,_grenades,_weaponMagazineSpares]],
-            [_backpack,[[["rhs_weap_rpg26", "", "", "", [],[], ""], 1],["ACE_EntrenchingTool", 1],["rhs_100Rnd_762x54mmR_green",1,100]]],
+            [_vest,[["ACE_EntrenchingTool",1],_smokes,_grenades,_weaponMagazineSpares]],
+            [_backpack,[[[_OneUseLauncher,"","","",["",1],[],""], 2]]],
             _headgear, //helmet
             "", //cosmetic
             [],
@@ -219,11 +227,27 @@ if (isServer) then {
             [],
             [_pistol,_pistolMuzzle,_pistolAccessory,_pistolSight,_pistolMagazineArray,[],""],
             [_uniform,[["ACE_morphine",10],["ACE_tourniquet",2],["ACE_epinephrine",10],["ACE_splint", 4],["ACE_fieldDressing",20]]],
-            [_vest,[_smokes,_grenades,_grenadierMagazineSpares]],
+            [_vest,[_smokes,_grenades,_weaponMagazineSpares]],
             [_backpackLeader,[]], 
             _headgearLeader, //helmet
             "", //cosmetic
             ["Binocular","","","",["",0],[],""],
+            [_map, _gps, _radio, _compass, _watch, _nightVision]
+        ]
+    ];
+	
+	//Platoon Leader loadout
+    _array pushBack["loadoutPlatoonLeader",
+        [
+            [_weapon,_weaponMuzzle,_weaponAccessory,_weaponSight,_WeaponMagazineArray,[],""],
+            [],
+            [_pistol,_pistolMuzzle,_pistolAccessory,_pistolSight,_pistolMagazineArray,[],""],
+            [_uniform,[["ACE_morphine",10],["ACE_tourniquet",2],["ACE_epinephrine",10],["ACE_splint", 4],["ACE_fieldDressing",20]]],
+            [_vest,[_smokes,_grenades,_weaponMagazineSpares]],
+            [_backpackLeader,[]], 
+            _headgearLeader, //helmet
+            "", //cosmetic
+            ["Rangefinder","","","",["",0],[],""],
             [_map, _gps, _radio, _compass, _watch, _nightVision]
         ]
     ];
@@ -252,7 +276,7 @@ if (isServer) then {
             [],
             [_uniform,[["ACE_morphine",10],["ACE_tourniquet",2],["ACE_epinephrine",10],["ACE_splint", 4],["ACE_fieldDressing",20]]],
             [_vest,[_mgMagazineSpares]],
-            [_backpack,[_mgMagazineSpares]], 
+            [_backpack,[[_mgMagazineSpares],["ACE_SpareBarrel",1,1]]], 
             _headgear, //helmet
             "", //cosmetic
             [],
@@ -268,7 +292,7 @@ if (isServer) then {
             [],
             [_uniform,[["ACE_morphine",10],["ACE_tourniquet",2],["ACE_epinephrine",10],["ACE_splint", 4],["ACE_fieldDressing",20]]],
             [_vest,[_hmgMagazineSpares]],
-            [_backpack,[_hmgMagazineSpares]], 
+            [_backpack,[_hmgMagazineSpares]],
             _headgear, //helmet
             "", //cosmetic
             [],
@@ -312,11 +336,11 @@ if (isServer) then {
     _array pushBack["loadoutEngineer",
         [
             [_weapon,_weaponMuzzle,_weaponAccessory,_weaponSight,_WeaponMagazineArray,[],""],
-            [],
+            [_OneUseLauncher,"","","",["",1],[],""],
             [],
             [_uniform,[["ACE_morphine",10],["ACE_tourniquet",2],["ACE_epinephrine",10],["ACE_splint", 4],["ACE_fieldDressing",20]]],
             [_vest,[["ACE_EntrenchingTool",1],_smokes,_grenades,_weaponMagazineSpares]],
-            [_backpack,[["ACE_M26_Clacker",1],["ACE_DefusalKit",1],["DemoCharge_Remote_Mag",2,1]]], 
+            [_backpack,[["ACE_M26_Clacker",1],["ACE_DefusalKit",1],["ToolKit",1],["DemoCharge_Remote_Mag",3,1]]], 
             _headgear, //helmet
             "", //cosmetic
             [],
@@ -334,7 +358,39 @@ if (isServer) then {
             [_vest,[_smokes,_grenades,_weaponMagazineSpares]],
             [_backpackMedic,[["ACE_salineIV",8],["ACE_salineIV_500",8],["ACE_morphine",40],["ACE_tourniquet",4],["ACE_epinephrine",20],["ACE_fieldDressing",80],["ACE_splint", 10]]],
             _headgear, //helmet
-            "G_Armband_Med", //cosmetic
+            "", //cosmetic
+            [],
+            [_map, _gps, _radio, _compass, _watch, _nightVision]
+        ]
+    ];
+	
+	//Crewman loadout
+    _array pushBack["loadoutCrewman",
+        [
+            [_weapon,_weaponMuzzle,_weaponAccessory,_weaponSight,_WeaponMagazineArray,[],""],
+            [],
+            [],
+            [_uniformCrewman,[["ACE_morphine",5],["ACE_tourniquet",2],["ACE_epinephrine",5],["ACE_splint", 4],["ACE_fieldDressing",20]]],
+            [_vest,[_smokes,_grenades,_weaponMagazineSpares]],
+            [[]],
+            _headgearCrewman, //helmet
+            "", //cosmetic
+            [],
+            [_map, _gps, _radio, _compass, _watch, _nightVision]
+        ]
+    ];
+	
+	//Pilot loadout
+    _array pushBack["loadoutPilot",
+        [
+            [_weapon,_weaponMuzzle,_weaponAccessory,_weaponSight,_WeaponMagazineArray,[],""],
+            [],
+            [],
+            [_uniformPilot,[["ACE_morphine",5],["ACE_tourniquet",2],["ACE_epinephrine",5],["ACE_splint", 4],["ACE_fieldDressing",20]]],
+            [_vest,[_smokes,_grenades,_weaponMagazineSpares]],
+            [[]],
+            _headgearPilot, //helmet
+            "", //cosmetic
             [],
             [_map, _gps, _radio, _compass, _watch, _nightVision]
         ]
